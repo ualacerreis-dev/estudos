@@ -35,7 +35,8 @@ export default function App() {
  const [quizStats,setQuizStats] = useState(()=>readStore('trilha-pcmg-quiz-v1',{answered:0,correct:0}));
  const quizQuestions = useMemo(()=>questions.filter(q=>quizSubject==='todas'||q.subjectId===quizSubject),[quizSubject]);
  const currentQuestion = quizQuestions.length ? quizQuestions[questionIndex % quizQuestions.length] : undefined;
- useEffect(()=>{localStorage.setItem('trilha-pcmg-quiz-v1',JSON.stringify(quizStats));},[quizStats]);\n useEffect(()=>{const studyPages:Page[]=['aulas','questoes','edital'];if(!studyPages.includes(page))return;const timer=window.setInterval(()=>{if(document.visibilityState==='visible')setMetrics((old:any)=>({...old,minutes:old.minutes+1}));},60000);return()=>window.clearInterval(timer);},[page]);
+ useEffect(()=>{localStorage.setItem('trilha-pcmg-quiz-v1',JSON.stringify(quizStats));},[quizStats]);
+ useEffect(()=>{const studyPages:Page[]=['aulas','questoes','edital'];if(!studyPages.includes(page))return;const timer=window.setInterval(()=>{if(document.visibilityState==='visible')setMetrics((old:any)=>({...old,minutes:old.minutes+1}));},60000);return()=>window.clearInterval(timer);},[page]);
  useEffect(()=>{localStorage.setItem(PROGRESS_KEY,JSON.stringify(progress));},[progress]);
  useEffect(()=>{localStorage.setItem(METRICS_KEY,JSON.stringify(metrics));},[metrics]);
  useEffect(()=>{localStorage.setItem(REVIEWS_KEY,JSON.stringify(completedReviews));},[completedReviews]);
