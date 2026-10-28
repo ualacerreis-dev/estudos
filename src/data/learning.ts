@@ -113,7 +113,8 @@ export const lessons: Lesson[] = [
    "Paroxítona: penúltima sílaba tônica.",
    "Proparoxítona: antepenúltima; todas são acentuadas.",
    "Identifique tonicidade e terminação antes de decidir."
-  ]
+  ],
+ "tecSearch": "https://www.tecconcursos.com.br/questoes/cadernos"
  },
  {
   "id": "port-pontuacao",
@@ -146,7 +147,8 @@ export const lessons: Lesson[] = [
    "Oração explicativa tem vírgulas; restritiva não.",
    "Não separe sujeito e predicado por vírgula sem justificativa sintática.",
    "Pontue pela estrutura, não só pela pausa oral."
-  ]
+  ],
+ "tecSearch": "https://www.tecconcursos.com.br/questoes/cadernos"
  },
  {
   "id": "informatica-arquivos",
@@ -179,7 +181,8 @@ export const lessons: Lesson[] = [
    "Copiar duplica; mover muda a localização.",
    "Apagar um atalho não costuma apagar o arquivo de destino.",
    "Memorize atalhos comuns, mas considere o aplicativo citado."
-  ]
+  ],
+ "tecSearch": "https://www.tecconcursos.com.br/questoes/cadernos"
  },
  {
   "id": "informatica-redes",
@@ -212,7 +215,8 @@ export const lessons: Lesson[] = [
    "DNS resolve nomes de domínio.",
    "DHCP distribui configurações automaticamente.",
    "HTTPS protege a comunicação com TLS; SMTP está ligado ao envio de e-mail."
-  ]
+  ],
+ "tecSearch": "https://www.tecconcursos.com.br/questoes/cadernos"
  },
  {
   "id": "rlm-tabelas-verdade",
@@ -245,7 +249,8 @@ export const lessons: Lesson[] = [
    "p ∨ q só é falsa com duas falsas.",
    "p → q só é falsa quando p=V e q=F.",
    "¬(p → q) equivale a p ∧ ¬q."
-  ]
+  ],
+ "tecSearch": "https://www.tecconcursos.com.br/questoes/cadernos"
  },
  {
   "id": "processo-penal-inquerito-detalhe",
@@ -275,7 +280,8 @@ export const lessons: Lesson[] = [
    "Não é processo judicial nem aplica pena.",
    "É tradicionalmente escrito, oficial, inquisitivo e dispensável em certas condições.",
    "Prazos variam; confira CPP e leis especiais vigentes."
-  ]
+  ],
+ "tecSearch": "https://www.tecconcursos.com.br/questoes/cadernos"
  },
  {
   "id": "administrativo-atos",
@@ -306,7 +312,8 @@ export const lessons: Lesson[] = [
    "Presunções são relativas.",
    "Imperatividade e autoexecutoriedade não aparecem em todos os atos.",
    "Anulação: ilegalidade; revogação: mérito administrativo de ato válido."
-  ]
+  ],
+ "tecSearch": "https://www.tecconcursos.com.br/questoes/cadernos"
  },
  {
   "id": "dh-dudh",
@@ -336,7 +343,8 @@ export const lessons: Lesson[] = [
    "Direitos humanos se vinculam à dignidade e à igualdade.",
    "Universalidade não significa aplicação sem análise jurídica.",
    "Desconfie de alternativas que tratem direitos como privilégios de nacionalidade ou como absolutos sem exceção."
-  ]
+  ],
+ "tecSearch": "https://www.tecconcursos.com.br/questoes/cadernos"
  }
 
 ];
