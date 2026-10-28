@@ -3,7 +3,7 @@ import type { Session } from '@supabase/supabase-js';
 import { BookOpen, LoaderCircle, ShieldCheck } from 'lucide-react';
 import { supabase } from './lib/supabase';
 
-const KEYS = ['trilha-pcmg-progress-v1', 'trilha-pcmg-metrics-v1', 'trilha-pcmg-quiz-v1', 'trilha-pcmg-reviews-v1'];
+const KEYS = ['trilha-pcmg-progress-v1', 'trilha-pcmg-metrics-v1', 'trilha-pcmg-quiz-v1', 'trilha-pcmg-reviews-v1', 'trilha-pcmg-makeups-v1'];
 
 export default function AuthGate() {
   const [session, setSession] = useState<Session | null>(null);
