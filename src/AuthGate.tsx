@@ -118,7 +118,7 @@ export default function AuthGate() {
     setMessage('');
     try {
       const result = mode === 'signup'
-        ? await supabase.auth.signUp({ email: email.trim(), password, options: { emailRedirectTo: 'https://estudos-wallace-mdb-2154.vercel.app' } })
+        ? await supabase.auth.signUp({ email: email.trim(), password, options: { emailRedirectTo: window.location.origin } })
         : await supabase.auth.signInWithPassword({ email: email.trim(), password });
       if (result.error) throw result.error;
       if (mode === 'signup' && !result.data.session) {
