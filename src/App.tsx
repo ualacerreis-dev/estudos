@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { Activity, BookOpen, CalendarDays, CheckCircle2, ChevronRight, CircleHelp, Clock3, ExternalLink, Flame, GraduationCap, LayoutDashboard, LibraryBig, ListChecks, Menu, RotateCcw, Save, Search, Target, X } from 'lucide-react';
 import { subjects, weeklyPlan, type Subject } from './data/syllabus';
 
@@ -9,7 +9,7 @@ const PROGRESS_KEY = 'trilha-pcmg-progress-v1';
 const METRICS_KEY = 'trilha-pcmg-metrics-v1';
 function readStore<T>(key: string, fallback: T): T { try { const value = localStorage.getItem(key); return value ? JSON.parse(value) as T : fallback; } catch { return fallback; } }
 function sessionKey(day: string, id: string) { return day + '::' + id; }
-function Stat({ icon, label, value, hint }: { icon: React.ReactNode; label: string; value: string; hint: string }) { return <div className="stat-card"><div className="stat-icon">{icon}</div><p>{label}</p><strong>{value}</strong><small>{hint}</small></div>; }
+function Stat({ icon, label, value, hint }: { icon: ReactNode; label: string; value: string; hint: string }) { return <div className="stat-card"><div className="stat-icon">{icon}</div><p>{label}</p><strong>{value}</strong><small>{hint}</small></div>; }
 function Heading({ eyebrow, title, subtitle }: { eyebrow: string; title: string; subtitle: string }) { return <div className="page-heading"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="subheading">{subtitle}</p></div>; }
 
 export default function App() {
@@ -25,7 +25,7 @@ export default function App() {
  useEffect(()=>{localStorage.setItem(METRICS_KEY,JSON.stringify(metrics));},[metrics]);
  const completed = Object.values(progress).filter(x=>x.done).length;
  const total = weeklyPlan.reduce((sum,d)=>sum+d.subjectIds.length,0);
- const percent = Math.round(completed/total*100);
+ const percent = Math.min(100, Math.round(completed/total*100));
  const accuracy = metrics.questions ? Math.round(metrics.correct/metrics.questions*100) : 0;
  const filtered = useMemo(()=>subjects.filter(s=>(s.name+' '+s.topics.join(' ')).toLowerCase().includes(query.toLowerCase())),[query]);
  const nav: {id:Page;label:string;icon:typeof LayoutDashboard}[] = [
