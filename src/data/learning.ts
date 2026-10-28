@@ -81,7 +81,265 @@ export const lessons: Lesson[] = [
   {heading:'5. Negação da condicional',body:'A negação de “se p, então q” é “p e não q”. Não basta negar somente a segunda parte nem inverter a ordem das partes.',example:'Negação de “Se estudo, então passo”: “Estudo e não passo”.'},
   {heading:'6. Estratégia de prova',body:'Traduza cada frase para símbolos quando ajudar: p ∧ q, p ∨ q, p → q. Depois aplique a regra. Cuidado para não confundir a negação de uma condicional com sua recíproca (“se q, então p”), que não é equivalente.'}
  ],summary:['p ∧ q: só é verdadeira se p e q forem verdadeiras.','p ∨ q: só é falsa se p e q forem falsas.','Negação de p ∧ q: ¬p ∨ ¬q.','Negação de p ∨ q: ¬p ∧ ¬q.','Negação de p → q: p ∧ ¬q.'],tecSearch:tec},
-]; 
+
+ {
+  "id": "port-acentuacao",
+  "subjectId": "portugues",
+  "title": "Acentuação gráfica e regras básicas",
+  "objective": "Aplicar as regras gerais de acentuação e reconhecer as pegadinhas mais comuns.",
+  "sections": [
+   {
+    "heading": "1. Oxítonas",
+    "body": "Oxítonas têm a última sílaba tônica. São acentuadas quando terminam em a(s), e(s), o(s), em(ens): café, cipó, também, parabéns. Não confunda tonicidade com acento gráfico: nem toda oxítona recebe acento.",
+    "example": "Café, sofá e armazém recebem acento; papel e rapaz não."
+   },
+   {
+    "heading": "2. Paroxítonas",
+    "body": "Paroxítonas têm a penúltima sílaba tônica. A regra geral favorece terminações como l, n, r, x, i(s), us, um/uns, ã(s), ão(s), ps e ditongo: fácil, hífen, caráter, tórax, júri, álbum, órfã, história.",
+    "example": "Em “fácil”, a sílaba tônica é fá; por isso é paroxítona terminada em l."
+   },
+   {
+    "heading": "3. Proparoxítonas e hiatos",
+    "body": "Toda proparoxítona é acentuada: lâmpada, público, lógico. Também há regras específicas para hiatos, como em saída e país; observe a posição da vogal tônica e as condições da regra.",
+    "example": "“Médico” é proparoxítona; “saída” tem hiato entre a e í."
+   },
+   {
+    "heading": "4. Acordo ortográfico e estratégia",
+    "body": "Não use regras antigas para formas que perderam acento, como ideia, assembleia e voo. Em prova, separe sílabas, identifique a sílaba tônica e só então aplique a regra. Confira casos especiais e a redação atual das normas ortográficas."
+   }
+  ],
+  "summary": [
+   "Oxítona: última sílaba tônica.",
+   "Paroxítona: penúltima sílaba tônica.",
+   "Proparoxítona: antepenúltima; todas são acentuadas.",
+   "Identifique tonicidade e terminação antes de decidir."
+  ]
+ },
+ {
+  "id": "port-pontuacao",
+  "subjectId": "portugues",
+  "title": "Pontuação: vírgula e seus principais usos",
+  "objective": "Entender quando a vírgula é exigida, possível ou proibida em estruturas comuns de prova.",
+  "sections": [
+   {
+    "heading": "1. Enumeração e elementos deslocados",
+    "body": "A vírgula separa itens de uma enumeração e pode isolar expressões adverbiais deslocadas, especialmente quando longas. A pontuação deve refletir a estrutura sintática, não apenas uma pausa da fala.",
+    "example": "“Foram analisados documentos, imagens e depoimentos.”"
+   },
+   {
+    "heading": "2. Vocativo e aposto explicativo",
+    "body": "O vocativo chama o interlocutor e fica separado por vírgula. O aposto explicativo acrescenta uma informação e também costuma ser isolado por vírgulas.",
+    "example": "“Candidato, leia o enunciado.” / “A Constituição, norma fundamental do Estado, limita o poder.”"
+   },
+   {
+    "heading": "3. Orações explicativas e adversativas",
+    "body": "Orações adjetivas explicativas são isoladas por vírgulas; as restritivas não. Conjunções como “porém”, “contudo” e “entretanto” costumam vir acompanhadas de pontuação conforme a posição na frase.",
+    "example": "“Os agentes, que receberam treinamento, iniciaram o trabalho” sugere que todos receberam treinamento; sem vírgulas, a oração pode restringir o grupo."
+   },
+   {
+    "heading": "4. Erros frequentes",
+    "body": "Em regra, não se separa sujeito de verbo nem verbo de complemento por vírgula. Em questões FGV, localize primeiro sujeito, verbo e complementos; depois avalie se o trecho é explicativo, deslocado ou intercalado."
+   }
+  ],
+  "summary": [
+   "Vocativo e aposto explicativo ficam isolados.",
+   "Oração explicativa tem vírgulas; restritiva não.",
+   "Não separe sujeito e predicado por vírgula sem justificativa sintática.",
+   "Pontue pela estrutura, não só pela pausa oral."
+  ]
+ },
+ {
+  "id": "informatica-arquivos",
+  "subjectId": "informatica",
+  "title": "Windows: arquivos, pastas e atalhos",
+  "objective": "Reconhecer operações básicas de arquivos e atalhos úteis em questões de informática.",
+  "sections": [
+   {
+    "heading": "1. Arquivo e pasta",
+    "body": "Arquivo armazena dados; pasta organiza arquivos e outras pastas. A extensão costuma indicar o formato, como .pdf, .docx, .xlsx ou .jpg, mas renomear a extensão não converte automaticamente o conteúdo para outro formato.",
+    "example": "Trocar “relatorio.txt” para “relatorio.pdf” apenas mudando o nome não cria necessariamente um PDF válido."
+   },
+   {
+    "heading": "2. Copiar, mover e excluir",
+    "body": "Copiar cria outra instância do arquivo; mover altera sua localização. Excluir normalmente envia o item à Lixeira quando aplicável, mas exclusões em unidades removíveis, redes ou com comandos específicos podem não seguir esse comportamento.",
+    "example": "Ctrl+C copia e Ctrl+V cola; Ctrl+X recorta para mover, em operações comuns."
+   },
+   {
+    "heading": "3. Atalhos comuns",
+    "body": "Ctrl+A seleciona tudo; Ctrl+C copia; Ctrl+X recorta; Ctrl+V cola; Ctrl+Z desfaz; Alt+Tab alterna janelas; Win+E abre o Explorador de Arquivos nas versões usuais do Windows.",
+    "example": "Se uma questão pergunta como alternar entre janelas abertas, pense em Alt+Tab."
+   },
+   {
+    "heading": "4. Cuidado em prova",
+    "body": "Os atalhos podem variar conforme aplicativo, versão ou configuração. Leia o contexto e diferencie excluir, remover atalho e desinstalar programa. Um atalho aponta para um recurso; apagar o atalho não costuma apagar o arquivo original."
+   }
+  ],
+  "summary": [
+   "Arquivo guarda dados; pasta organiza itens.",
+   "Copiar duplica; mover muda a localização.",
+   "Apagar um atalho não costuma apagar o arquivo de destino.",
+   "Memorize atalhos comuns, mas considere o aplicativo citado."
+  ]
+ },
+ {
+  "id": "informatica-redes",
+  "subjectId": "informatica",
+  "title": "Redes: IP, DNS, DHCP e protocolos",
+  "objective": "Diferenciar serviços e protocolos básicos de redes de computadores.",
+  "sections": [
+   {
+    "heading": "1. Endereço IP",
+    "body": "O endereço IP identifica uma interface em uma rede IP para permitir comunicação. IPv4 usa 32 bits e é escrito normalmente em quatro números decimais; IPv6 usa 128 bits e possui espaço de endereçamento muito maior.",
+    "example": "192.168.1.10 é um exemplo de endereço IPv4 privado."
+   },
+   {
+    "heading": "2. DNS",
+    "body": "O DNS traduz nomes de domínio em informações como endereços IP. Ele permite que o usuário acesse um serviço pelo nome, sem precisar memorizar o endereço numérico.",
+    "example": "Ao acessar um site pelo domínio, o DNS ajuda a localizar o endereço associado."
+   },
+   {
+    "heading": "3. DHCP",
+    "body": "O DHCP atribui automaticamente configurações de rede aos clientes, como endereço IP, máscara, gateway e servidores DNS, conforme a configuração do servidor.",
+    "example": "Em uma rede doméstica, o roteador geralmente distribui endereços aos dispositivos via DHCP."
+   },
+   {
+    "heading": "4. Protocolos e pegadinhas",
+    "body": "HTTP/HTTPS são usados na comunicação web; HTTPS acrescenta proteção criptográfica por TLS. SMTP é associado ao envio de e-mails; IMAP e POP3 são usados para acesso/recebimento. Não confunda DNS, que resolve nomes, com DHCP, que distribui configurações."
+   }
+  ],
+  "summary": [
+   "IP identifica a interface na rede.",
+   "DNS resolve nomes de domínio.",
+   "DHCP distribui configurações automaticamente.",
+   "HTTPS protege a comunicação com TLS; SMTP está ligado ao envio de e-mail."
+  ]
+ },
+ {
+  "id": "rlm-tabelas-verdade",
+  "subjectId": "rlm",
+  "title": "Tabelas-verdade e equivalências básicas",
+  "objective": "Determinar valores lógicos de conectivos e reconhecer equivalências importantes.",
+  "sections": [
+   {
+    "heading": "1. Negação",
+    "body": "A negação ¬p inverte o valor lógico: se p é verdadeira, ¬p é falsa; se p é falsa, ¬p é verdadeira."
+   },
+   {
+    "heading": "2. Conjunção e disjunção",
+    "body": "p ∧ q (“p e q”) só é verdadeira quando ambas são verdadeiras. p ∨ q (“p ou q” inclusivo) só é falsa quando ambas são falsas.",
+    "example": "V ∧ F = F; V ∨ F = V."
+   },
+   {
+    "heading": "3. Condicional",
+    "body": "p → q (“se p, então q”) só é falsa quando p é verdadeira e q é falsa. A primeira parte é antecedente; a segunda, consequente.",
+    "example": "Se a premissa p ocorre, mas q não ocorre, a condicional é falsa."
+   },
+   {
+    "heading": "4. Equivalências e método",
+    "body": "A condicional p → q equivale a ¬p ∨ q. Sua negação é p ∧ ¬q. Resolva linha por linha e destaque o único cenário falso da condicional, pois é uma fonte comum de pegadinhas."
+   }
+  ],
+  "summary": [
+   "¬p inverte o valor de p.",
+   "p ∧ q só é verdadeira com duas verdadeiras.",
+   "p ∨ q só é falsa com duas falsas.",
+   "p → q só é falsa quando p=V e q=F.",
+   "¬(p → q) equivale a p ∧ ¬q."
+  ]
+ },
+ {
+  "id": "processo-penal-inquerito-detalhe",
+  "subjectId": "processo-penal",
+  "title": "Inquérito policial: natureza, características e prazos",
+  "objective": "Organizar os conceitos básicos do inquérito e distinguir investigação de processo judicial.",
+  "sections": [
+   {
+    "heading": "1. Conceito e finalidade",
+    "body": "O inquérito policial é procedimento administrativo de investigação destinado a apurar a infração penal e sua autoria, reunindo elementos informativos para subsidiar a atuação do titular da ação penal. Não é, por si só, processo judicial nem aplica pena."
+   },
+   {
+    "heading": "2. Características",
+    "body": "Tradicionalmente é descrito como escrito, oficial, inquisitivo e dispensável para o oferecimento da denúncia quando já existirem elementos suficientes. A característica inquisitiva significa que não há contraditório pleno nos moldes da fase judicial, sem eliminar direitos e garantias da defesa previstos em lei."
+   },
+   {
+    "heading": "3. Instauração e diligências",
+    "body": "A forma de instauração depende da natureza da ação penal e das regras legais. A autoridade policial pode realizar diligências legalmente admitidas, ouvir pessoas, preservar vestígios e documentar elementos relevantes, respeitando direitos fundamentais e requisitos para medidas sujeitas à reserva de jurisdição."
+   },
+   {
+    "heading": "4. Prazos e cautela",
+    "body": "Os prazos variam conforme legislação, situação de investigado preso ou solto e leis especiais. Para a prova, memorize o dispositivo efetivamente indicado no edital e diferencie regra geral do CPP de regimes especiais; não aplique um prazo universal a todos os casos."
+   }
+  ],
+  "summary": [
+   "Inquérito é procedimento administrativo investigativo.",
+   "Não é processo judicial nem aplica pena.",
+   "É tradicionalmente escrito, oficial, inquisitivo e dispensável em certas condições.",
+   "Prazos variam; confira CPP e leis especiais vigentes."
+  ]
+ },
+ {
+  "id": "administrativo-atos",
+  "subjectId": "administrativo",
+  "title": "Atos administrativos: elementos e atributos",
+  "objective": "Identificar os elementos de validade e os atributos mais cobrados dos atos administrativos.",
+  "sections": [
+   {
+    "heading": "1. Elementos",
+    "body": "A estrutura clássica reúne competência, finalidade, forma, motivo e objeto. Competência é quem pode praticar; finalidade é o interesse público previsto; forma é o modo de exteriorização; motivo são os pressupostos de fato e de direito; objeto é o efeito jurídico produzido.",
+    "example": "Se uma autoridade competente pratica ato para perseguir desafeto, o problema está na finalidade, caracterizando desvio de poder."
+   },
+   {
+    "heading": "2. Presunção de legitimidade e veracidade",
+    "body": "Os atos administrativos gozam, em regra, de presunção relativa de legitimidade e veracidade. Isso não significa que sejam infalíveis: a presunção pode ser afastada por prova em contrário."
+   },
+   {
+    "heading": "3. Imperatividade e autoexecutoriedade",
+    "body": "Imperatividade permite impor obrigações independentemente da concordância do destinatário, quando cabível. Autoexecutoriedade permite execução direta em hipóteses legalmente admitidas, mas não está presente em todos os atos e não elimina exigências legais."
+   },
+   {
+    "heading": "4. Anulação e revogação",
+    "body": "Anulação decorre de ilegalidade; revogação incide sobre ato válido que deixou de ser conveniente ou oportuno, respeitados limites legais e direitos protegidos. A Administração exerce autotutela, e o Judiciário controla a legalidade sem substituir livremente o mérito administrativo."
+   }
+  ],
+  "summary": [
+   "Elementos: competência, finalidade, forma, motivo e objeto.",
+   "Presunções são relativas.",
+   "Imperatividade e autoexecutoriedade não aparecem em todos os atos.",
+   "Anulação: ilegalidade; revogação: mérito administrativo de ato válido."
+  ]
+ },
+ {
+  "id": "dh-dudh",
+  "subjectId": "dh",
+  "title": "Direitos Humanos: Declaração Universal e características",
+  "objective": "Conhecer as ideias centrais da Declaração Universal e características dos direitos humanos.",
+  "sections": [
+   {
+    "heading": "1. Ideia central",
+    "body": "A Declaração Universal dos Direitos Humanos, proclamada pela Assembleia Geral da ONU em 1948, afirma a dignidade inerente a todas as pessoas e a igualdade em direitos. É referência central do sistema internacional de proteção."
+   },
+   {
+    "heading": "2. Características",
+    "body": "Direitos humanos são frequentemente descritos como universais, interdependentes, indivisíveis e relacionados à dignidade humana. Universalidade significa que pertencem a todas as pessoas; não significa que todos os direitos tenham aplicação prática idêntica em qualquer situação."
+   },
+   {
+    "heading": "3. Direitos previstos",
+    "body": "A Declaração aborda vida, liberdade, segurança, proibição da escravidão e da tortura, reconhecimento perante a lei, garantias processuais, liberdade de pensamento e religião, expressão, reunião, trabalho, educação e participação na vida pública."
+   },
+   {
+    "heading": "4. Como a banca pode cobrar",
+    "body": "Desconfie de alternativas que afirmem que direitos humanos pertencem apenas a cidadãos de um país, que tortura pode ser normalizada por conveniência ou que todos os direitos são absolutos. Em situações concretas, observe a norma aplicável, os limites jurídicos legítimos e a proteção da dignidade."
+   }
+  ],
+  "summary": [
+   "DUDH proclamada pela ONU em 1948.",
+   "Direitos humanos se vinculam à dignidade e à igualdade.",
+   "Universalidade não significa aplicação sem análise jurídica.",
+   "Desconfie de alternativas que tratem direitos como privilégios de nacionalidade ou como absolutos sem exceção."
+  ]
+ }
+
+];
 export const questions: Question[] = [
  {id:'p1',subjectId:'portugues',topic:'Interpretação',statement:'Leia: “O acesso à informação cresceu, mas a capacidade de avaliar sua confiabilidade não aumentou no mesmo ritmo.” A ideia central é que:',options:['O acesso à informação diminuiu nos últimos anos.','Toda informação disponível na internet é falsa.','O aumento do acesso não garante avaliação adequada da confiabilidade.','A confiabilidade deixou de ser relevante.','A avaliação da informação é impossível.'],answer:2,explanations:['Contradiz o trecho, que afirma que o acesso cresceu.','O texto não afirma que toda informação é falsa.','Correta: reproduz a relação de contraste e a ideia principal.','O trecho não diz que a confiabilidade perdeu importância.','“Impossível” extrapola o que foi dito.'],takeaway:'A ideia central deve resumir a afirmação do texto sem exagerar.'},
  {id:'p2',subjectId:'portugues',topic:'Inferência',statement:'Um texto afirma: “Apesar de ter saído cedo, Marina chegou atrasada por causa de um acidente na avenida.” Qual conclusão é sustentada pelo trecho?',options:['Marina sempre se atrasa.','O acidente contribuiu para o atraso de Marina.','Marina saiu de casa depois do horário.','A avenida estava interditada por completo.','Marina provocou o acidente.'],answer:1,explanations:['“Sempre” generaliza além do caso descrito.','Correta: o texto atribui o atraso ao acidente.','O texto informa que ela saiu cedo, não tarde.','Não há informação sobre interdição total.','Não há informação de que Marina causou o acidente.'],takeaway:'Inferência válida é sustentada por pistas textuais, não por suposição.'},
