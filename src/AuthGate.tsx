@@ -39,7 +39,7 @@ function installCloudSync() {
 export default function AuthGate() {
   const [session, setSession] = useState<Session | null>(null);
   const [checking, setChecking] = useState(true);
-  const [mode, setMode] = useState<'login' | 'signup'>('login');
+  const [mode, setMode] = useState<'login' | 'signup' | 'recover' | 'update'>('login');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [busy, setBusy] = useState(false);
@@ -103,8 +103,14 @@ export default function AuthGate() {
       void activate(data.session);
       setChecking(false);
     });
-    const { data: listener } = supabase.auth.onAuthStateChange((_event, nextSession) => {
-      if (mounted) void activate(nextSession);
+    const { data: listener } = supabase.auth.onAuthStateChange((event, nextSession) => {
+      if (!mounted) return;
+      if (event === 'PASSWORD_RECOVERY') {
+        setMode('update');
+        setPassword('');
+        setMessage('Digite sua nova senha para recuperar o acesso.');
+      }
+      void activate(nextSession);
     });
     return () => {
       mounted = false;
@@ -117,14 +123,26 @@ export default function AuthGate() {
     setBusy(true);
     setMessage('');
     try {
-      const result = mode === 'signup'
-        ? await supabase.auth.signUp({ email: email.trim(), password, options: { emailRedirectTo: window.location.origin } })
-        : await supabase.auth.signInWithPassword({ email: email.trim(), password });
-      if (result.error) throw result.error;
-      if (mode === 'signup' && !result.data.session) {
-        setMessage('Cadastro iniciado. Confira seu e-mail para confirmar a conta e depois entre por aqui.');
-      } else if (mode === 'login' && result.data.session) {
-        setMessage('Login realizado. Carregando seu progresso...');
+      if (mode === 'recover') {
+        const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), { redirectTo: window.location.origin });
+        if (error) throw error;
+        setMessage('Se houver uma conta com esse e-mail, enviaremos um link de recuperação. Confira também o spam.');
+      } else if (mode === 'update') {
+        const { error } = await supabase.auth.updateUser({ password });
+        if (error) throw error;
+        setMessage('Senha alterada com sucesso. Agora você já pode entrar com a nova senha.');
+        setMode('login');
+        setPassword('');
+      } else {
+        const result = mode === 'signup'
+          ? await supabase.auth.signUp({ email: email.trim(), password, options: { emailRedirectTo: window.location.origin } })
+          : await supabase.auth.signInWithPassword({ email: email.trim(), password });
+        if (result.error) throw result.error;
+        if (mode === 'signup' && !result.data.session) {
+          setMessage('Cadastro iniciado. Confira seu e-mail para confirmar a conta e depois entre por aqui.');
+        } else if (mode === 'login' && result.data.session) {
+          setMessage('Login realizado. Carregando seu progresso...');
+        }
       }
     } catch (err) {
       setMessage(err instanceof Error ? err.message : 'Não foi possível autenticar.');
@@ -146,7 +164,7 @@ export default function AuthGate() {
 
   if (session && ready) return <><div className="cloud-account"><span><ShieldCheck size={15}/> {message ? 'Conta conectada · atenção necessária' : 'Progresso sincronizado'} · {session.user.email}</span><button onClick={signOut}>Sair</button></div>{message && <p className="auth-message" role="status">{message}</p>}<div className="auth-app"><AppMount /></div></>;
 
-  return <div className="auth-screen"><div className="auth-card"><div className="auth-logo"><BookOpen size={25}/></div><p className="eyebrow">PREPARAÇÃO PCMG</p><h1>{mode === 'login' ? 'Entre na sua Trilha' : 'Crie sua conta'}</h1><p className="auth-description">Salve aulas concluídas, questões e desempenho para continuar em outros dispositivos.</p><form onSubmit={submit}><label>E-mail<input type="email" autoComplete="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="voce@exemplo.com"/></label><label>Senha<input type="password" autoComplete={mode === 'login' ? 'current-password' : 'new-password'} minLength={6} required value={password} onChange={e => setPassword(e.target.value)} placeholder="Mínimo de 6 caracteres"/></label><button className="auth-submit" type="submit" disabled={busy}>{busy ? 'Aguarde...' : mode === 'login' ? 'Entrar' : 'Criar conta'}</button></form>{message&&<p className="auth-message" role="status">{message}</p>}<button className="auth-switch" onClick={() => {setMode(mode === 'login' ? 'signup' : 'login');setMessage('');}}>{mode === 'login' ? 'Ainda não tem conta? Criar cadastro' : 'Já tem conta? Entrar'}</button><small>Seus dados ficam protegidos por regras de acesso por usuário. Nunca compartilhe sua senha.</small></div></div>;
+  return <div className="auth-screen"><div className="auth-card"><div className="auth-logo"><BookOpen size={25}/></div><p className="eyebrow">PREPARAÇÃO PCMG</p><h1>{mode === 'login' ? 'Entre na sua Trilha' : mode === 'signup' ? 'Crie sua conta' : mode === 'recover' ? 'Recuperar senha' : 'Criar nova senha'}</h1><p className="auth-description">Salve aulas concluídas, questões e desempenho para continuar em outros dispositivos.</p><form onSubmit={submit}><label>{mode === 'update' ? 'Nova senha' : 'E-mail'}{mode === 'update' ? <input type="password" autoComplete="new-password" minLength={6} required value={password} onChange={e => setPassword(e.target.value)} placeholder="Mínimo de 6 caracteres"/> : <input type="email" autoComplete="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="voce@exemplo.com"/>}</label>{(mode === 'login' || mode === 'signup')&&<label>Senha<input type="password" autoComplete={mode === 'login' ? 'current-password' : 'new-password'} minLength={6} required value={password} onChange={e => setPassword(e.target.value)} placeholder="Mínimo de 6 caracteres"/></label>}<button className="auth-submit" type="submit" disabled={busy}>{busy ? 'Aguarde...' : mode === 'login' ? 'Entrar' : mode === 'signup' ? 'Criar conta' : mode === 'recover' ? 'Enviar link de recuperação' : 'Salvar nova senha'}</button></form>{message&&<p className="auth-message" role="status">{message}</p>}{mode === 'login'&&<button className="auth-switch" onClick={() => {setMode('recover');setMessage('');}}>Esqueci minha senha</button>}{mode !== 'update'&&<button className="auth-switch" onClick={() => {setMode(mode === 'signup' ? 'login' : 'signup');setMessage('');}}>{mode === 'signup' ? 'Já tem conta? Entrar' : mode === 'recover' ? 'Voltar para entrar' : 'Ainda não tem conta? Criar cadastro'}</button>}<small>Seus dados ficam protegidos por regras de acesso por usuário. Nunca compartilhe sua senha.</small></div></div>;
 }
 
 // Keep application state from initializing until the cloud copy has been loaded.
