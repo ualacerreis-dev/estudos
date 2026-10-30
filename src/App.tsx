@@ -12,23 +12,27 @@ const PROGRESS_KEY = 'trilha-pcmg-progress-v1';
 const METRICS_KEY = 'trilha-pcmg-metrics-v1';
 const REVIEWS_KEY = 'trilha-pcmg-reviews-v1';
 const TOPIC_PROGRESS_KEY = 'trilha-pcmg-topic-progress-v1';
+const UI_STATE_KEY = 'trilha-pcmg-ui-state-v1';
+const SCROLL_POSITION_KEY = 'trilha-pcmg-scroll-position-v1';
+type UIState = { page?: Page; selectedId?: string | null; selectedLessonId?: string | null; selectedTopic?: string | null; query?: string };
+function readUIState(): UIState { return readStore<UIState>(UI_STATE_KEY, {}); }
 function readStore<T>(key: string, fallback: T): T { try { const value = localStorage.getItem(key); return value ? JSON.parse(value) as T : fallback; } catch { return fallback; } }
 function sessionKey(day: string, id: string) { return day + '::' + id; }
 function Stat({ icon, label, value, hint }: { icon: ReactNode; label: string; value: string; hint: string }) { return <div className="stat-card"><div className="stat-icon">{icon}</div><p>{label}</p><strong>{value}</strong><small>{hint}</small></div>; }
 function Heading({ eyebrow, title, subtitle }: { eyebrow: string; title: string; subtitle: string }) { return <div className="page-heading"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="subheading">{subtitle}</p></div>; }
 
 export default function App() {
- const [page,setPage] = useState<Page>('painel');
+ const [page,setPage] = useState<Page>(()=>{const saved=readUIState().page;return saved&&['painel','cronograma','edital','desempenho','revisoes','aulas','questoes'].includes(saved)?saved:'painel';});
  const [progress,setProgress] = useState<Progress>(() => readStore(PROGRESS_KEY,{}));
  const [metrics,setMetrics] = useState(() => readStore(METRICS_KEY,{questions:0,correct:0,minutes:0}));
  const [completedReviews,setCompletedReviews] = useState<string[]>(() => readStore(REVIEWS_KEY,[]));
  const [makeUps,setMakeUps] = useState<MakeUpTask[]>(() => readStore(MAKEUPS_KEY,[]));
  const [form,setForm] = useState({questions:'15',correct:'10',minutes:'90'});
- const [selected,setSelected] = useState<Subject|null>(null);
- const [selectedLesson,setSelectedLesson] = useState<(typeof lessons)[number]|null>(null);
- const [selectedTopic,setSelectedTopic] = useState<string|null>(null);
+ const [selected,setSelected] = useState<Subject|null>(()=>{const id=readUIState().selectedId;return subjects.find(s=>s.id===id)??null;});
+ const [selectedLesson,setSelectedLesson] = useState<(typeof lessons)[number]|null>(()=>{const id=readUIState().selectedLessonId;return lessons.find(l=>l.id===id)??null;});
+ const [selectedTopic,setSelectedTopic] = useState<string|null>(()=>readUIState().selectedTopic??null);
  const [topicProgress,setTopicProgress] = useState<Record<string,boolean>>(()=>readStore(TOPIC_PROGRESS_KEY,{}));
- const [query,setQuery] = useState('');
+ const [query,setQuery] = useState(()=>readUIState().query??'');
  const [menu,setMenu] = useState(false);
  const [notice,setNotice] = useState('');
  const [quizSubject,setQuizSubject] = useState('todas');
@@ -39,6 +43,8 @@ export default function App() {
  const quizQuestions = useMemo(()=>questions.filter(q=>quizSubject==='todas'||q.subjectId===quizSubject),[quizSubject]);
  const currentQuestion = quizQuestions.length ? quizQuestions[questionIndex % quizQuestions.length] : undefined;
  useEffect(()=>{localStorage.setItem('trilha-pcmg-quiz-v1',JSON.stringify(quizStats));},[quizStats]);
+ useEffect(()=>{localStorage.setItem(UI_STATE_KEY,JSON.stringify({page,selectedId:selected?.id??null,selectedLessonId:selectedLesson?.id??null,selectedTopic,query}));},[page,selected?.id,selectedLesson?.id,selectedTopic,query]);
+ useEffect(()=>{let first:number|undefined;let second:number|undefined;const saved=readStore<number>(SCROLL_POSITION_KEY,0);first=window.setTimeout(()=>window.scrollTo({top:saved,behavior:'auto'}),120);second=window.setTimeout(()=>window.scrollTo({top:saved,behavior:'auto'}),450);let saveTimer:number|undefined;const onScroll=()=>{if(saveTimer)window.clearTimeout(saveTimer);saveTimer=window.setTimeout(()=>localStorage.setItem(SCROLL_POSITION_KEY,JSON.stringify(window.scrollY)),100);};window.addEventListener('scroll',onScroll,{passive:true});return()=>{if(first)window.clearTimeout(first);if(second)window.clearTimeout(second);if(saveTimer)window.clearTimeout(saveTimer);window.removeEventListener('scroll',onScroll);};},[]);
  useEffect(()=>{const studyPages:Page[]=['aulas','questoes','edital'];if(!studyPages.includes(page))return;const timer=window.setInterval(()=>{if(document.visibilityState==='visible')setMetrics((old:any)=>({...old,minutes:old.minutes+1}));},60000);return()=>window.clearInterval(timer);},[page]);
  useEffect(()=>{localStorage.setItem(PROGRESS_KEY,JSON.stringify(progress));},[progress]);
  useEffect(()=>{localStorage.setItem(METRICS_KEY,JSON.stringify(metrics));},[metrics]);
