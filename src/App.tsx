@@ -21,7 +21,7 @@ function sessionKey(day: string, id: string) { return day + '::' + id; }
 function Stat({ icon, label, value, hint }: { icon: ReactNode; label: string; value: string; hint: string }) { return <div className="stat-card"><div className="stat-icon">{icon}</div><p>{label}</p><strong>{value}</strong><small>{hint}</small></div>; }
 function Heading({ eyebrow, title, subtitle }: { eyebrow: string; title: string; subtitle: string }) { return <div className="page-heading"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="subheading">{subtitle}</p></div>; }
 
-function normalizeText(value: string) { return value.normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(); }
+function normalizeText(value: string) { return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(); }
 function findLessonForTopic(subjectId: string, topic: string) {
  const normalizedTopic = normalizeText(topic);
  const available = lessons.filter(lesson => lesson.subjectId === subjectId);
