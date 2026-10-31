@@ -329,6 +329,66 @@ export const lessons: Lesson[] = [
  "tecSearch": "https://www.tecconcursos.com.br/questoes/cadernos"
  },
  {
+  "id": "dh-conceito-caracteristicas-sistemas",
+  "subjectId": "dh",
+  "title": "Conceito, características e sistemas de proteção",
+  "objective": "Compreender o conceito de Direitos Humanos, distinguir Direitos Humanos de Direitos Fundamentais, reconhecer suas características e identificar os sistemas global e interamericano de proteção, com foco em questões de concurso.",
+  "sections": [
+   {
+    "heading": "1. Conceito de Direitos Humanos",
+    "body": "Direitos Humanos são direitos e garantias ligados à dignidade de toda pessoa, reconhecidos e protegidos no plano internacional. Buscam proteger a vida, a liberdade, a igualdade, a integridade física e moral e as condições necessárias para uma existência digna. Não são favores concedidos pelo Estado: impõem deveres de respeito, proteção e, em muitos casos, promoção.",
+    "example": "A proibição da tortura protege qualquer pessoa, independentemente de nacionalidade, condição social ou acusação criminal."
+   },
+   {
+    "heading": "2. Direitos Humanos x Direitos Fundamentais",
+    "body": "A distinção didática mais comum considera Direitos Humanos os direitos reconhecidos especialmente em documentos e sistemas internacionais, enquanto Direitos Fundamentais são os direitos positivados na Constituição de determinado Estado. Os conteúdos frequentemente se sobrepõem: um mesmo direito, como a liberdade de expressão, pode ser protegido por tratados internacionais e pela Constituição brasileira.",
+    "example": "A proteção à integridade pessoal aparece em instrumentos internacionais e também se relaciona às garantias previstas na Constituição Federal."
+   },
+   {
+    "heading": "3. Universalidade",
+    "body": "Os Direitos Humanos pertencem a todas as pessoas, sem discriminação por nacionalidade, origem, sexo, raça, religião, opinião ou outra condição. Universalidade não significa que todo conflito tenha resposta automática: restrições a determinados direitos precisam ter fundamento jurídico legítimo, respeitar os requisitos aplicáveis e não podem destruir o núcleo da proteção."
+   },
+   {
+    "heading": "4. Historicidade e progressividade",
+    "body": "A compreensão e o reconhecimento dos Direitos Humanos se desenvolvem historicamente, em resposta a mudanças sociais e a lutas por proteção. A progressividade, especialmente relevante nos direitos econômicos, sociais e culturais, orienta a ampliação da proteção e veda retrocessos injustificados nos termos do direito aplicável. Historicidade não significa que qualquer governo possa retirar direitos livremente."
+   },
+   {
+    "heading": "5. Indivisibilidade e interdependência",
+    "body": "Indivisibilidade significa que os direitos formam um conjunto integrado, sem uma hierarquia geral que permita desprezar categorias inteiras. Interdependência indica que a realização de um direito pode depender de outros. Direitos civis e políticos se relacionam com direitos econômicos, sociais e culturais.",
+    "example": "Acesso à educação pode favorecer o exercício da liberdade de expressão e a participação na vida pública."
+   },
+   {
+    "heading": "6. Inalienabilidade, irrenunciabilidade e imprescritibilidade",
+    "body": "Inalienabilidade indica que a pessoa não pode tratar a dignidade e os direitos essenciais como mercadorias livremente transferíveis. Irrenunciabilidade significa que não se admite renúncia irrestrita ao núcleo essencial de proteção, embora a pessoa possa exercer escolhas e consentir em situações juridicamente permitidas. Imprescritibilidade costuma indicar que a titularidade dos Direitos Humanos não desaparece simplesmente com o decurso do tempo; isso não torna automaticamente imprescritíveis todas as pretensões, sanções ou ações judiciais relacionadas a qualquer violação."
+   },
+   {
+    "heading": "7. Relatividade e limites",
+    "body": "Muitos direitos admitem limitações juridicamente justificadas, desde que observados a Constituição, os tratados aplicáveis, a legalidade, a necessidade e a proporcionalidade quando pertinentes. Evite a afirmação genérica de que todos os direitos são absolutos. A proibição da tortura, por exemplo, recebe proteção especialmente rigorosa e não pode ser legitimada por conveniência investigativa."
+   },
+   {
+    "heading": "8. Sistema global de proteção: ONU",
+    "body": "O sistema global desenvolve-se no âmbito da Organização das Nações Unidas. Tem como marco a Carta da ONU e a Declaração Universal dos Direitos Humanos, de 1948, além de tratados internacionais específicos. Comitês de tratados monitoram o cumprimento de convenções pelos Estados que as ratificaram, conforme as competências previstas em cada instrumento. A Declaração Universal é uma declaração, não um tratado internacional por si só."
+   },
+   {
+    "heading": "9. Sistema regional interamericano",
+    "body": "O sistema interamericano está ligado à Organização dos Estados Americanos (OEA). Entre seus instrumentos centrais estão a Declaração Americana dos Direitos e Deveres do Homem e a Convenção Americana sobre Direitos Humanos, conhecida como Pacto de San José da Costa Rica. A Comissão Interamericana recebe petições e monitora a situação dos direitos humanos nos termos dos instrumentos aplicáveis. A Corte Interamericana exerce função jurisdicional em relação aos Estados que reconheceram sua competência contenciosa, observados os requisitos próprios."
+   },
+   {
+    "heading": "10. Como a FGV pode explorar o tema",
+    "body": "A banca pode trocar os conceitos de Direitos Humanos e Direitos Fundamentais; afirmar incorretamente que a Declaração Universal é um tratado; confundir ONU com OEA; atribuir à Comissão Interamericana a função jurisdicional própria da Corte; ou dizer que universalidade torna todos os direitos absolutos. Leia com atenção o verbo usado na alternativa e identifique qual instrumento, organização ou órgão está sendo descrito."
+   }
+  ],
+  "summary": [
+   "Direitos Humanos: proteção da dignidade da pessoa no plano internacional.",
+   "Direitos Fundamentais: direitos positivados na Constituição de um Estado, na distinção didática usual.",
+   "Características importantes: universalidade, historicidade, indivisibilidade, interdependência, inalienabilidade, irrenunciabilidade e imprescritibilidade, observadas as nuances jurídicas.",
+   "Nem todos os direitos são absolutos; limitações precisam respeitar os parâmetros jurídicos aplicáveis.",
+   "Sistema global: ONU. Sistema regional interamericano: OEA, Comissão Interamericana e Corte Interamericana, com funções distintas.",
+   "A Declaração Universal de 1948 é uma declaração, não um tratado por si só."
+  ],
+  "tecSearch": "https://www.tecconcursos.com.br/questoes/cadernos"
+ },
+ {
   "id": "dh-dudh",
   "subjectId": "dh",
   "title": "Direitos Humanos: Declaração Universal e características",
