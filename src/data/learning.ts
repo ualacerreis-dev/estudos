@@ -1,5 +1,5 @@
 export type Lesson = { id: string; subjectId: string; title: string; objective: string; sections: { heading: string; body: string; example?: string }[]; summary: string[]; tecSearch: string };
-export type Question = { id: string; subjectId: string; topic: string; statement: string; options: string[]; answer: number; explanations: string[]; takeaway: string };
+export type Question = { id: string; subjectId: string; topic: string; statement: string; options: string[]; answer: number; explanations: string[]; takeaway: string; source?: { bank: string; year: number; contest: string } };
 const tec = 'https://www.tecconcursos.com.br/questoes/cadernos';
 export const lessons: Lesson[] = [
  { id:'port-interpretação', subjectId:'portugues', title:'Interpretação de textos: tema, ideia central e inferência', objective:'Aprender um método de leitura para localizar informações, reconhecer a tese do texto, inferir sem extrapolar e eliminar alternativas no padrão de cobrança da FGV.', sections:[
