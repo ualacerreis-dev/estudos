@@ -441,6 +441,31 @@ export const humanRightsLessons: Lesson[] = [
 
 export const humanRightsQuestions: Question[] = [
   {
+    id: "dhq611",
+    subjectId: "dh",
+    topic: "6.1 Teoria Geral dos Direitos Humanos — Inalienabilidade",
+    source: {
+      bank: "Instituto AOCP",
+      year: 2026,
+      contest: "Policial Penal (DEPEN/MG)"
+    },
+    statement: "Conforme a doutrina, os direitos humanos possuem atributos que, em conjunto, asseguram sua intangibilidade por serem essenciais à vida digna. Nesse cenário, a vedação de atribuir valor econômico para fins de negociação ou venda desses direitos é característica da",
+    options: [
+      "imprescritibilidade.",
+      "inalienabilidade.",
+      "irrenunciabilidade.",
+      "universalidade."
+    ],
+    answer: 1,
+    explanations: [
+      "A imprescritibilidade indica que a proteção dos direitos humanos não se perde pelo simples decurso do tempo.",
+      "Correta. A inalienabilidade significa que os direitos humanos não podem ser transferidos, comercializados ou negociados mediante valor econômico.",
+      "A irrenunciabilidade impede que a pessoa abandone voluntariamente a titularidade de direitos humanos, embora possa deixar de exercer determinadas faculdades em situações juridicamente admitidas.",
+      "A universalidade significa que os direitos humanos pertencem a todas as pessoas, sem discriminação."
+    ],
+    takeaway: "Inalienabilidade: direitos humanos não podem ser vendidos, transferidos ou negociados como mercadoria."
+  },
+  {
     id: "dhq61",
     subjectId: "dh",
     topic: "6.1 Teoria Geral dos Direitos Humanos",
