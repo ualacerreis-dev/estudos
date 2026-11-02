@@ -440,274 +440,692 @@ export const humanRightsLessons: Lesson[] = [
 ];
 
 export const humanRightsQuestions: Question[] = [
-  {
-  {
-    id: "dhq612",
-    subjectId: "dh",
-    topic: "6.1 Teoria Geral dos Direitos Humanos — Dimensões dos direitos humanos",
-    source: {
-      bank: "Instituto AOCP",
-      year: 2026,
-      contest: "Policial Penal (DEPEN/MG)"
-    },
-    statement: "De acordo com a teoria das gerações (ou dimensões) dos direitos humanos, é correto afirmar que os direitos de solidariedade, como o direito à paz e ao meio ambiente ecologicamente equilibrado, são classificados como direitos de",
-    options: [
-      "primeira geração.",
-      "segunda geração.",
-      "terceira geração.",
-      "quarta geração."
-    ],
-    answer: 2,
-    explanations: [
-      "A primeira dimensão reúne, em regra, direitos civis e políticos, ligados às liberdades individuais e à limitação do poder estatal.",
-      "A segunda dimensão abrange direitos econômicos, sociais e culturais, associados à igualdade material e a prestações estatais.",
-      "Correta. A terceira dimensão compreende direitos de solidariedade ou fraternidade, de titularidade frequentemente coletiva ou difusa, como paz, meio ambiente equilibrado e desenvolvimento.",
-      "A quarta dimensão aparece em algumas classificações doutrinárias e pode envolver temas como democracia, informação e pluralismo, mas não é a classificação tradicional dos direitos de solidariedade citados."
-    ],
-    takeaway: "Terceira dimensão = direitos de solidariedade/fraternidade, como paz e meio ambiente ecologicamente equilibrado."
+{
+  id: "dhq611",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Inalienabilidade",
+  source: {
+    bank: "Instituto AOCP",
+    year: 2026,
+    contest: "Policial Penal (DEPEN/MG)"
   },
-    id: "dhq611",
-    subjectId: "dh",
-    topic: "6.1 Teoria Geral dos Direitos Humanos — Inalienabilidade",
-    source: {
-      bank: "Instituto AOCP",
-      year: 2026,
-      contest: "Policial Penal (DEPEN/MG)"
-    },
-    statement: "Conforme a doutrina, os direitos humanos possuem atributos que, em conjunto, asseguram sua intangibilidade por serem essenciais à vida digna. Nesse cenário, a vedação de atribuir valor econômico para fins de negociação ou venda desses direitos é característica da",
-    options: [
-      "imprescritibilidade.",
-      "inalienabilidade.",
-      "irrenunciabilidade.",
-      "universalidade."
-    ],
-    answer: 1,
-    explanations: [
-      "A imprescritibilidade indica que a proteção dos direitos humanos não se perde pelo simples decurso do tempo.",
-      "Correta. A inalienabilidade significa que os direitos humanos não podem ser transferidos, comercializados ou negociados mediante valor econômico.",
-      "A irrenunciabilidade impede que a pessoa abandone voluntariamente a titularidade de direitos humanos, embora possa deixar de exercer determinadas faculdades em situações juridicamente admitidas.",
-      "A universalidade significa que os direitos humanos pertencem a todas as pessoas, sem discriminação."
-    ],
-    takeaway: "Inalienabilidade: direitos humanos não podem ser vendidos, transferidos ou negociados como mercadoria."
+  statement: "Conforme a doutrina, os direitos humanos possuem atributos que asseguram sua intangibilidade por serem essenciais à vida digna. A vedação de atribuir valor econômico para fins de negociação ou venda desses direitos corresponde à característica da:",
+  options: [
+    "Imprescritibilidade.",
+    "Inalienabilidade.",
+    "Irrenunciabilidade.",
+    "Universalidade.",
+    "Historicidade."
+  ],
+  answer: 1,
+  explanations: [
+    "Imprescritibilidade está relacionada à impossibilidade de perder a proteção do direito pelo simples decurso do tempo.",
+    "Correta. Inalienabilidade significa que os direitos humanos não podem ser transferidos ou comercializados como mercadoria.",
+    "Irrenunciabilidade impede o abandono da titularidade do direito, embora determinadas faculdades possam deixar de ser exercidas.",
+    "Universalidade indica que os direitos pertencem a todas as pessoas.",
+    "Historicidade significa que os direitos são reconhecidos e ampliados ao longo do processo histórico."
+  ],
+  takeaway: "Inalienabilidade = direitos humanos não podem ser vendidos ou negociados.",
+  subjectId: "dh"
+},
+{
+  id: "dhq612",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Dimensões",
+  source: {
+    bank: "Instituto AOCP",
+    year: 2026,
+    contest: "Policial Penal (DEPEN/MG)"
   },
-  {
-    id: "dhq61",
-    subjectId: "dh",
-    topic: "6.1 Teoria Geral dos Direitos Humanos",
-    statement: "A característica da indivisibilidade dos direitos humanos significa que:",
-    options: [
-      "Os direitos civis e políticos são superiores aos direitos sociais.",
-      "As diferentes categorias de direitos se complementam e devem ser consideradas conjuntamente.",
-      "Somente direitos previstos em tratados podem ser protegidos.",
-      "Todos os direitos são absolutos e não admitem restrições.",
-      "Os direitos humanos dependem da nacionalidade."
-    ],
-    answer: 1,
-    explanations: [
-      "A indivisibilidade rejeita hierarquia rígida entre categorias.",
-      "Correta: as categorias são interdependentes e devem ser protegidas em conjunto.",
-      "A proteção também decorre das constituições e de outras fontes.",
-      "Direitos podem sofrer limitações legítimas, respeitados os parâmetros jurídicos.",
-      "A universalidade afasta a dependência de nacionalidade."
-    ],
-    takeaway: "Indivisibilidade significa proteção integrada, sem hierarquia rígida entre categorias."
+  statement: "De acordo com a teoria das gerações ou dimensões dos direitos humanos, os direitos de solidariedade, como o direito à paz e ao meio ambiente ecologicamente equilibrado, são classificados como direitos de:",
+  options: [
+    "Primeira geração.",
+    "Segunda geração.",
+    "Terceira geração.",
+    "Quarta geração.",
+    "Quinta geração."
+  ],
+  answer: 2,
+  explanations: [
+    "A primeira dimensão reúne principalmente direitos civis e políticos, ligados à liberdade.",
+    "A segunda dimensão abrange direitos econômicos, sociais e culturais, associados à igualdade material.",
+    "Correta. A terceira dimensão reúne direitos de solidariedade ou fraternidade, frequentemente de titularidade coletiva ou difusa.",
+    "A quarta dimensão, em classificações doutrinárias conhecidas, pode abranger democracia, informação e pluralismo.",
+    "A quinta dimensão é associada por alguns autores a temas como a paz, mas a classificação tradicional da paz e do meio ambiente como direitos de solidariedade é a terceira dimensão."
+  ],
+  takeaway: "Terceira dimensão = solidariedade/fraternidade, como paz e meio ambiente.",
+  subjectId: "dh"
+},
+{
+  id: "dhq613",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Essencialidade",
+  source: {
+    bank: "FGV",
+    year: 2025,
+    contest: "Investigador de Polícia (PC-MG)"
   },
-  {
-    id: "dhq62",
-    subjectId: "dh",
-    topic: "6.2 Processo histórico",
-    statement: "A Declaração Universal dos Direitos Humanos foi proclamada pela Assembleia Geral da ONU em:",
-    options: [
-      "1919.",
-      "1945.",
-      "1948.",
-      "1966.",
-      "1969."
-    ],
-    answer: 2,
-    explanations: [
-      "1919 é marco do constitucionalismo social de Weimar.",
-      "1945 é o ano da Carta da ONU.",
-      "Correta: a DUDH foi proclamada em 10 de dezembro de 1948.",
-      "1966 é o ano dos dois Pactos Internacionais.",
-      "1969 é o ano de adoção da Convenção Americana."
-    ],
-    takeaway: "DUDH: 10 de dezembro de 1948."
+  statement: "A característica dos direitos humanos considerada essencial e indispensável para uma vida digna é denominada:",
+  options: [
+    "Renunciabilidade.",
+    "Alienabilidade.",
+    "Essencialidade.",
+    "Prescritibilidade.",
+    "Dependência."
+  ],
+  answer: 2,
+  explanations: [
+    "Direitos humanos são geralmente caracterizados pela irrenunciabilidade, não pela renunciabilidade.",
+    "O direito à reparação por violação não torna o próprio direito alienável ou comercializável.",
+    "Correta. Essencialidade expressa que os direitos humanos são indispensáveis à existência digna da pessoa.",
+    "A doutrina aponta, em regra, a imprescritibilidade como característica dos direitos humanos, e não a prescritibilidade.",
+    "A característica relacionada à conexão entre os direitos é a interdependência; eles se complementam."
+  ],
+  takeaway: "Essencialidade = direitos indispensáveis à vida digna.",
+  subjectId: "dh"
+},
+{
+  id: "dhq614",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Indivisibilidade",
+  source: {
+    bank: "FGV",
+    year: 2025,
+    contest: "Médico Legista (PC-MG)"
   },
-  {
-    id: "dhq63",
-    subjectId: "dh",
-    topic: "6.3 Sistemas de proteção",
-    statement: "No sistema interamericano, a Comissão Interamericana de Direitos Humanos:",
-    options: [
-      "É um tribunal que profere sentenças contra indivíduos.",
-      "Recebe petições individuais e pode submeter casos à Corte IDH, observados os requisitos.",
-      "É órgão da ONU sem vínculo com a OEA.",
-      "É a mesma instituição que a Corte Interamericana.",
-      "Permite que qualquer pessoa ajuíze diretamente ação contenciosa na Corte."
-    ],
-    answer: 1,
-    explanations: [
-      "A CIDH não é tribunal penal nem julga indivíduos.",
-      "Correta: a Comissão recebe petições e pode levar casos à Corte, conforme a Convenção e o regulamento.",
-      "A CIDH integra o sistema da OEA.",
-      "Comissão e Corte têm funções distintas.",
-      "Indivíduos não submetem diretamente casos contenciosos à Corte."
-    ],
-    takeaway: "CIDH recebe petições; a Corte IDH julga casos que lhe são submetidos."
+  statement: "Sobre a teoria geral dos direitos humanos, assinale a afirmativa correta.",
+  options: [
+    "Os direitos humanos são alienáveis, pois podem receber valor para fins de venda.",
+    "Direitos fundamentais e direitos humanos são sinônimos perfeitos, pois ambos estão previstos exclusivamente em normas internacionais.",
+    "A indivisibilidade reconhece que as diferentes categorias de direitos integram um conjunto essencial à vida digna.",
+    "A universalidade permite que uma pessoa exerça seu direito mesmo em detrimento dos direitos de terceiros.",
+    "A teoria jusnaturalista explica os direitos humanos como aqueles criados exclusivamente pelo ordenamento jurídico estatal."
+  ],
+  answer: 2,
+  explanations: [
+    "A inalienabilidade impede a comercialização dos direitos humanos.",
+    "Direitos humanos são usualmente associados ao plano internacional; direitos fundamentais, ao reconhecimento no ordenamento constitucional interno. Os conceitos se relacionam, mas não são sinônimos perfeitos.",
+    "Correta. A indivisibilidade considera os direitos humanos como um conjunto integrado, sem hierarquia rígida entre suas categorias.",
+    "Universalidade significa titularidade de todas as pessoas; o exercício dos direitos deve respeitar os direitos de terceiros.",
+    "O jusnaturalismo relaciona os direitos à natureza humana ou a uma ordem de justiça anterior à vontade estatal, não exclusivamente à norma positiva."
+  ],
+  takeaway: "Indivisibilidade = os direitos formam um conjunto integrado e igualmente relevante à dignidade.",
+  subjectId: "dh"
+},
+{
+  id: "dhq615",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Universalismo e relativismo",
+  source: {
+    bank: "FGV",
+    year: 2025,
+    contest: "Defensor Público do Estado de Pernambuco"
   },
-  {
-    id: "dhq64",
-    subjectId: "dh",
-    topic: "6.4 Constituição e tratados",
-    statement: "Um tratado internacional de direitos humanos aprovado pelo rito do art. 5º, § 3º, da Constituição Federal terá status:",
-    options: [
-      "De lei ordinária.",
-      "De decreto regulamentar.",
-      "Equivalente ao de emenda constitucional.",
-      "Inferior a qualquer lei federal.",
-      "De norma municipal."
-    ],
-    answer: 2,
-    explanations: [
-      "Não se limita ao status de lei ordinária.",
-      "Não é mero decreto regulamentar.",
-      "Correta: dois turnos em cada Casa e três quintos dos votos geram equivalência a emenda constitucional.",
-      "Não fica abaixo de lei federal.",
-      "Não possui natureza municipal."
-    ],
-    takeaway: "Art. 5º, § 3º: rito qualificado confere equivalência a emenda constitucional."
+  statement: "Acerca do embate entre relativistas e universalistas, assinale a afirmativa correta.",
+  options: [
+    "Os relativistas só aceitam direitos humanos positivados.",
+    "Para os universalistas, os direitos humanos decorrem da dignidade humana.",
+    "Os relativistas afirmam que a existência dos direitos humanos depende de sua utilidade instrumental.",
+    "Universalistas e relativistas necessariamente rejeitam a classificação dos direitos em dimensões.",
+    "Os universalistas sustentam que todos os países devem atribuir idêntico status jurídico interno a cada direito humano."
+  ],
+  answer: 1,
+  explanations: [
+    "O relativismo cultural não se resume à aceitação de direitos escritos em normas; destaca a influência do contexto cultural.",
+    "Correta. O universalismo reconhece direitos inerentes a todas as pessoas, tendo a dignidade humana como fundamento central.",
+    "A instrumentalidade não define o relativismo; a discussão central envolve a relação entre valores culturais e pretensões universais.",
+    "A classificação em dimensões é uma construção doutrinária distinta do debate entre universalismo e relativismo.",
+    "A universalidade da titularidade não exige que todos os ordenamentos tenham estruturas normativas internas idênticas."
+  ],
+  takeaway: "Universalismo: direitos para todos, fundados na dignidade. Relativismo: considera contextos culturais.",
+  subjectId: "dh"
+},
+{
+  id: "dhq616",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Características e dimensões",
+  source: {
+    bank: "Instituto AOCP",
+    year: 2024,
+    contest: "Soldado da Polícia Militar (PM-PE/QPMG)"
   },
-  {
-    id: "dhq65",
-    subjectId: "dh",
-    topic: "6.5 Democracia e cidadania",
-    statement: "Em um Estado Democrático de Direito, a vontade da maioria:",
-    options: [
-      "Pode afastar direitos fundamentais de grupos minoritários.",
-      "É ilimitada quando expressa em eleição direta.",
-      "Deve respeitar a Constituição, os direitos fundamentais e o pluralismo.",
-      "Substitui o controle judicial de constitucionalidade.",
-      "Autoriza discriminação se aprovada em consulta popular."
-    ],
-    answer: 2,
-    explanations: [
-      "Maioria não pode eliminar direitos fundamentais.",
-      "O poder democrático é limitado pela Constituição.",
-      "Correta: democracia constitucional combina decisão majoritária com direitos e pluralismo.",
-      "O controle de constitucionalidade permanece como garantia.",
-      "Consulta popular não legitima discriminação incompatível com direitos fundamentais."
-    ],
-    takeaway: "Democracia não é apenas governo da maioria: exige limites constitucionais e proteção das minorias."
+  statement: "Tiago e Lucas frequentam o curso de formação da Polícia Militar. Ao discutir direitos humanos, Lucas fez uma afirmação equivocada. Assinale a alternativa INCORRETA.",
+  options: [
+    "A proteção dos direitos humanos é mais ampla do que a dos chamados direitos fundamentais.",
+    "O rol de direitos humanos não é exaustivo ou fechado.",
+    "Tratados de direitos humanos aprovados em cada Casa do Congresso, em dois turnos e por três quintos dos votos, serão equivalentes às emendas constitucionais.",
+    "De acordo com a doutrina, existem apenas duas gerações ou dimensões de direitos humanos.",
+    "Imprescritibilidade e universalidade são características atribuídas aos direitos humanos."
+  ],
+  answer: 3,
+  explanations: [
+    "Em regra, direitos humanos são reconhecidos no plano internacional, enquanto direitos fundamentais são positivados no ordenamento interno, especialmente na Constituição.",
+    "O catálogo de direitos humanos é aberto e pode ser ampliado pelo reconhecimento de novos direitos.",
+    "É a regra do art. 5º, § 3º, da Constituição Federal.",
+    "Correta. A classificação tradicional apresenta ao menos três dimensões: liberdade, igualdade e fraternidade/solidariedade. Há doutrinas que reconhecem dimensões posteriores.",
+    "Universalidade e imprescritibilidade são características tradicionalmente atribuídas aos direitos humanos."
+  ],
+  takeaway: "A classificação tradicional tem três dimensões, não apenas duas.",
+  subjectId: "dh"
+},
+{
+  id: "dhq617",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Direitos humanos e fundamentais",
+  source: {
+    bank: "FGV",
+    year: 2024,
+    contest: "Consultor Legislativo (CM Fortaleza) — Direitos Humanos"
   },
-  {
-    id: "dhq66",
-    subjectId: "dh",
-    topic: "6.6 Grupos vulneráveis",
-    statement: "A Convenção sobre os Direitos das Pessoas com Deficiência foi incorporada ao direito brasileiro:",
-    options: [
-      "Como lei municipal.",
-      "Com equivalência a emenda constitucional, observado o art. 5º, § 3º.",
-      "Sem qualquer força normativa.",
-      "Como tratado comercial.",
-      "Somente por decreto estadual."
-    ],
-    answer: 1,
-    explanations: [
-      "Não é lei municipal.",
-      "Correta: foi aprovada pelo rito qualificado do art. 5º, § 3º.",
-      "Possui força normativa e status constitucional equivalente.",
-      "Não é tratado comercial.",
-      "A incorporação é federal, não por decreto estadual."
-    ],
-    takeaway: "A Convenção sobre os Direitos das Pessoas com Deficiência tem equivalência a emenda constitucional."
+  statement: "Sobre o conceito de direito fundamental em relação ao de direito humano, assinale a afirmação correta.",
+  options: [
+    "Direito fundamental é sinônimo perfeito de direito humano.",
+    "Os conceitos não coincidem necessariamente, pois é possível haver direito humano não positivado como fundamental em determinado Estado e direito fundamental com configuração própria no plano interno.",
+    "O direito humano só tem validade se for convertido em direito fundamental no âmbito interno.",
+    "Direito fundamental é apenas o direito humano previsto em tratado internacional ratificado pelo Estado.",
+    "Os conceitos são excludentes e existe hierarquia necessária entre eles."
+  ],
+  answer: 1,
+  explanations: [
+    "Ambos protegem a dignidade, mas são expressões normalmente utilizadas em planos normativos distintos.",
+    "Correta. Direitos humanos são normalmente tratados no plano internacional; direitos fundamentais são reconhecidos pelo ordenamento constitucional interno. A correspondência não é necessariamente integral.",
+    "A validade e a proteção internacional dos direitos humanos não dependem de sua reprodução expressa na Constituição nacional.",
+    "Direitos fundamentais também podem decorrer da própria Constituição e de seu sistema de direitos.",
+    "Um mesmo direito pode ser reconhecido simultaneamente como direito humano e fundamental; não são categorias excludentes."
+  ],
+  takeaway: "Humanos: plano internacional. Fundamentais: plano constitucional interno, em regra.",
+  subjectId: "dh"
+},
+{
+  id: "dhq618",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Fundamentos",
+  source: {
+    bank: "FGV",
+    year: 2024,
+    contest: "Consultor Legislativo (CM Fortaleza) — Direitos Humanos"
   },
-  {
-    id: "dhq67",
-    subjectId: "dh",
-    topic: "6.7 Política Nacional de Direitos Humanos",
-    statement: "O PNDH-3 foi aprovado originalmente pelo:",
-    options: [
-      "Decreto 7.037/2009.",
-      "Decreto 678/1992.",
-      "Decreto 4.463/2002.",
-      "Lei 8.069/1990.",
-      "Decreto 9.000/2017."
-    ],
-    answer: 0,
-    explanations: [
-      "Correta: o Decreto 7.037/2009 aprovou o PNDH-3, posteriormente atualizado pelo Decreto 7.177/2010.",
-      "Decreto 678/1992 promulgou a Convenção Americana.",
-      "Decreto 4.463/2002 promulgou o reconhecimento da jurisdição da Corte IDH.",
-      "Lei 8.069/1990 é o ECA.",
-      "Não é o ato de aprovação do PNDH-3."
-    ],
-    takeaway: "PNDH-3: Decreto 7.037/2009, atualizado pelo Decreto 7.177/2010."
+  statement: "Os fundamentos dos direitos humanos são a razão de ser desses direitos e sua base filosófica de validade. Assinale a alternativa correta.",
+  options: [
+    "O jusnaturalismo relaciona os direitos humanos à natureza humana e a direitos inerentes à pessoa.",
+    "Para o jusnaturalismo, os direitos decorrem exclusivamente do mandamento do soberano.",
+    "O positivismo sustenta que a validade jurídica decorre do reconhecimento em normas postas pelo ordenamento.",
+    "A fundamentação religiosa e o jusnaturalismo são conceitos rigorosamente idênticos em qualquer teoria.",
+    "A fundamentação religiosa prevalece em todos os Estados contemporâneos e determina uniformemente os direitos humanos."
+  ],
+  answer: 2,
+  explanations: [
+    "A afirmação descreve corretamente o jusnaturalismo, mas não é a resposta escolhida nesta questão, que busca a formulação positivista.",
+    "A ideia de comando do soberano aproxima-se de uma concepção voluntarista ou positivista, não do fundamento jusnaturalista.",
+    "Correta. Para o positivismo jurídico, a validade da norma está ligada à sua produção e reconhecimento conforme as regras do ordenamento jurídico.",
+    "A fundamentação religiosa pode dialogar historicamente com concepções jusnaturalistas, mas não se confunde necessariamente com toda a corrente.",
+    "Não existe fundamento religioso uniforme adotado por todos os Estados; há diferentes tradições e Estados laicos."
+  ],
+  takeaway: "Positivismo: validade ligada à norma posta. Jusnaturalismo: direitos inerentes à natureza humana.",
+  subjectId: "dh"
+},
+{
+  id: "dhq619",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Dimensões",
+  source: {
+    bank: "FGV",
+    year: 2024,
+    contest: "Consultor Legislativo (CM Fortaleza) — Direitos Humanos"
   },
-  {
-    id: "dhq68",
-    subjectId: "dh",
-    topic: "6.8 Educação e cultura",
-    statement: "As Diretrizes Nacionais para a Educação em Direitos Humanos foram estabelecidas pela:",
-    options: [
-      "Resolução CNE/CP 1/2012.",
-      "Lei 9.474/1997.",
-      "Convenção Americana de 1969.",
-      "Lei 13.146/2015.",
-      "Declaração de 1789."
-    ],
-    answer: 0,
-    explanations: [
-      "Correta: a Resolução CNE/CP 1/2012 estabelece as Diretrizes Nacionais.",
-      "Lei 9.474/1997 trata de refugiados.",
-      "A Convenção Americana não é o ato normativo das diretrizes educacionais brasileiras.",
-      "Lei 13.146/2015 é a Lei Brasileira de Inclusão.",
-      "Declaração de 1789 é marco histórico francês."
-    ],
-    takeaway: "Resolução CNE/CP 1/2012: Diretrizes Nacionais para a Educação em Direitos Humanos."
+  statement: "Na perspectiva histórica, a doutrina divide os direitos humanos em gerações ou dimensões. Analise: I — primeira dimensão: liberdade, direitos civis e políticos; II — segunda dimensão: igualdade, direitos sociais, econômicos e culturais; III — terceira dimensão: fraternidade, direitos difusos e dos povos; IV — quarta dimensão: participação democrática, pluralismo e bioética. Está correto o que se afirma em:",
+  options: [
+    "I, III e IV, apenas.",
+    "I, II e III, apenas.",
+    "I e III, apenas.",
+    "I, II e IV, apenas.",
+    "I, II, III e IV."
+  ],
+  answer: 4,
+  explanations: [
+    "O item II também está correto, por isso esta combinação está incompleta.",
+    "O item IV também está correto segundo a classificação doutrinária adotada no enunciado.",
+    "O item II e o item IV também estão corretos.",
+    "O item III também está correto.",
+    "Correta. Os quatro itens correspondem à classificação doutrinária apresentada: liberdade, igualdade, fraternidade/solidariedade e, em determinadas correntes, democracia, pluralismo e bioética."
+  ],
+  takeaway: "1ª liberdade; 2ª igualdade; 3ª fraternidade/solidariedade; 4ª democracia, pluralismo e temas correlatos em certas doutrinas.",
+  subjectId: "dh"
+},
+{
+  id: "dhq620",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Universalidade",
+  source: {
+    bank: "FGV",
+    year: 2024,
+    contest: "Consultor Legislativo (CM Fortaleza) — Direitos Humanos"
   },
-  {
-    id: "dhq69",
-    subjectId: "dh",
-    topic: "6.9 Agenda 2030",
-    statement: "A Agenda 2030 da ONU é composta por:",
-    options: [
-      "10 objetivos e 100 metas.",
-      "17 objetivos e 169 metas.",
-      "17 objetivos e 17 metas.",
-      "20 objetivos e 169 metas.",
-      "8 objetivos e 21 metas."
-    ],
-    answer: 1,
-    explanations: [
-      "Não corresponde à estrutura oficial.",
-      "Correta: são 17 ODS e 169 metas.",
-      "O número de metas é 169.",
-      "Não são 20 objetivos.",
-      "Os oito Objetivos do Milênio pertencem à agenda anterior."
-    ],
-    takeaway: "Agenda 2030: 17 ODS e 169 metas."
-  },
-  {
-    id: "dhq610",
-    subjectId: "dh",
-    topic: "6.10 Segurança pública",
-    statement: "Na atuação policial, o uso da força deve observar, entre outros, os princípios de:",
-    options: [
-      "Vingança e intimidação.",
-      "Legalidade, necessidade, proporcionalidade e moderação.",
-      "Discricionariedade absoluta e ausência de registro.",
-      "Punição imediata e presunção de culpa.",
-      "Preferência por força letal em qualquer resistência."
-    ],
-    answer: 1,
-    explanations: [
-      "Vingança e intimidação são incompatíveis com a função policial.",
-      "Correta: o uso da força deve ser juridicamente fundamentado e proporcional à situação.",
-      "Não existe discricionariedade absoluta; registro e controle são essenciais.",
-      "A polícia não substitui o julgamento judicial nem presume culpa.",
-      "Força letal não é resposta automática à resistência."
-    ],
-    takeaway: "Uso da força exige legalidade, necessidade, proporcionalidade, moderação e responsabilização."
-  }
+  statement: "Sobre a característica da universalidade dos direitos humanos, assinale a afirmativa correta.",
+  options: [
+    "Os direitos humanos são destinados apenas às pessoas em situação migratória regular.",
+    "A cultura de um país sempre afasta a aplicação de direitos humanos incompatíveis com seus costumes.",
+    "A universalidade significa que todas as pessoas são titulares de direitos humanos, sem discriminação.",
+    "A universalidade exige que todos os países adotem textos constitucionais e leis idênticos.",
+    "Os direitos humanos só possuem validade depois de incorporados à legislação de cada país."
+  ],
+  answer: 2,
+  explanations: [
+    "A titularidade dos direitos humanos não depende da regularidade migratória.",
+    "A cultura merece consideração, mas não afasta automaticamente a proteção da dignidade e dos direitos humanos.",
+    "Correta. Universalidade significa que os direitos humanos pertencem a todas as pessoas, independentemente de nacionalidade, origem, religião ou condição migratória.",
+    "Universalidade não exige identidade entre os sistemas jurídicos nacionais.",
+    "A proteção internacional dos direitos humanos não depende exclusivamente de incorporação literal ao direito interno."
+  ],
+  takeaway: "Universalidade = todas as pessoas são titulares de direitos humanos.",
+  subjectId: "dh"
+},
+{
+  id: "dhq621",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Historicidade",
+  statement: "A característica da historicidade dos direitos humanos significa que:",
+  options: [
+    "Os direitos humanos são imutáveis e foram reconhecidos integralmente em um único momento histórico.",
+    "Os direitos humanos são construções históricas, reconhecidas e ampliadas ao longo do tempo.",
+    "Os direitos humanos só existem quando previstos em costumes imemoriais.",
+    "A evolução histórica permite que direitos já reconhecidos sejam livremente eliminados.",
+    "A titularidade dos direitos depende da época em que a pessoa nasceu."
+  ],
+  answer: 1,
+  explanations: [
+    "A historicidade afasta a ideia de reconhecimento completo e imutável em um único momento.",
+    "Correta. Os direitos humanos são resultado de processos históricos, lutas sociais e transformações políticas e jurídicas.",
+    "Costumes podem influenciar a proteção, mas não são a única fonte nem condição de existência dos direitos.",
+    "A evolução histórica não autoriza a eliminação arbitrária de direitos; existem garantias jurídicas contra retrocessos injustificados.",
+    "A pessoa não perde a titularidade dos direitos por ter nascido em determinada época."
+  ],
+  takeaway: "Historicidade = os direitos humanos são construídos e ampliados ao longo da história.",
+  subjectId: "dh"
+},
+{
+  id: "dhq622",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Interdependência",
+  statement: "A interdependência dos direitos humanos significa que:",
+  options: [
+    "Cada direito deve ser protegido isoladamente, sem considerar os demais.",
+    "A proteção de um direito pode depender da efetividade de outros direitos, que se relacionam e se complementam.",
+    "Os direitos sociais sempre prevalecem sobre os direitos civis.",
+    "Somente direitos individuais possuem relação entre si.",
+    "A violação de um direito não produz efeitos sobre o exercício de outros."
+  ],
+  answer: 1,
+  explanations: [
+    "A proteção isolada ignora a relação entre os diferentes direitos.",
+    "Correta. Direitos como saúde, educação, liberdade e participação política se relacionam e podem depender uns dos outros para sua efetividade.",
+    "A interdependência não estabelece hierarquia automática entre direitos sociais e civis.",
+    "A relação entre direitos alcança direitos individuais, coletivos, civis, políticos, econômicos, sociais e culturais.",
+    "A violação de um direito pode comprometer o exercício de outros, como ocorre quando a falta de educação restringe a participação social."
+  ],
+  takeaway: "Interdependência = os direitos se conectam e se reforçam mutuamente.",
+  subjectId: "dh"
+},
+{
+  id: "dhq623",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Irrenunciabilidade",
+  statement: "Uma pessoa declara que não deseja mais ser titular de sua dignidade e de todos os direitos humanos que lhe são inerentes. À luz das características dos direitos humanos, essa declaração:",
+  options: [
+    "Produz renúncia definitiva, pois todo direito pode ser abandonado.",
+    "É válida se registrada em cartório.",
+    "Não elimina a titularidade dos direitos humanos, em razão de sua irrenunciabilidade.",
+    "Transforma os direitos humanos em direitos patrimoniais disponíveis.",
+    "É válida quando aceita por autoridade pública."
+  ],
+  answer: 2,
+  explanations: [
+    "A titularidade dos direitos humanos não pode ser simplesmente abandonada por declaração individual.",
+    "O registro formal não transforma direitos humanos em bens livremente renunciáveis.",
+    "Correta. A irrenunciabilidade impede que a pessoa abandone a titularidade dos direitos humanos, embora o exercício de determinadas faculdades possa sofrer escolhas e limites legítimos.",
+    "Direitos humanos não se tornam mercadorias ou direitos patrimoniais disponíveis por vontade do titular.",
+    "A autoridade pública não pode validar a renúncia geral à titularidade de direitos inerentes à pessoa."
+  ],
+  takeaway: "Irrenunciabilidade protege a titularidade; não confunda titularidade com exercício de uma faculdade.",
+  subjectId: "dh"
+},
+{
+  id: "dhq624",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Não absolutismo",
+  statement: "Sobre a afirmação de que os direitos humanos não são absolutos, assinale a alternativa correta.",
+  options: [
+    "Qualquer direito pode ser afastado livremente pelo Estado, sem justificativa.",
+    "A existência de limites significa que os direitos humanos não possuem proteção jurídica.",
+    "Direitos podem sofrer restrições juridicamente justificadas, desde que respeitados os parâmetros constitucionais e internacionais, como legalidade e proporcionalidade.",
+    "A segurança pública sempre prevalece sobre a liberdade individual.",
+    "A vontade da maioria permite suspender qualquer direito de grupos minoritários."
+  ],
+  answer: 2,
+  explanations: [
+    "O Estado não pode restringir direitos arbitrariamente; deve apresentar fundamento jurídico e respeitar garantias.",
+    "A possibilidade de limites não elimina a proteção jurídica dos direitos.",
+    "Correta. Restrições devem ter base legal, finalidade legítima e respeitar adequação, necessidade e proporcionalidade, além do núcleo protegido.",
+    "Não há prevalência automática da segurança sobre a liberdade; é necessário ponderar os direitos e as circunstâncias.",
+    "A maioria democrática também está limitada pela Constituição e pelos direitos fundamentais."
+  ],
+  takeaway: "Direitos não absolutos podem ter limites, mas nunca restrições arbitrárias.",
+  subjectId: "dh"
+},
+{
+  id: "dhq625",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Deveres do Estado",
+  statement: "No campo dos direitos humanos, os deveres estatais de respeitar, proteger e promover significam, respectivamente:",
+  options: [
+    "Punir, indenizar e legislar.",
+    "Não violar diretamente os direitos; impedir violações por terceiros; adotar medidas para tornar os direitos efetivos.",
+    "Delegar, privatizar e limitar todos os direitos.",
+    "Investigar, julgar e condenar em qualquer situação.",
+    "Reconhecer direitos apenas a nacionais; proteger apenas cidadãos; promover apenas direitos políticos."
+  ],
+  answer: 1,
+  explanations: [
+    "A alternativa apresenta ações possíveis em certas situações, mas não corresponde à classificação dos três deveres.",
+    "Correta. Respeitar exige abstenção de violações; proteger exige prevenir e enfrentar violações por terceiros; promover exige medidas positivas para efetivar direitos.",
+    "A delegação ou privatização não define os deveres estatais e não afasta a responsabilidade de proteção.",
+    "Investigação e punição podem integrar a proteção, mas não resumem os três deveres.",
+    "Os direitos humanos têm titularidade universal e não se limitam a nacionais ou a direitos políticos."
+  ],
+  takeaway: "Estado: respeitar (não violar), proteger (evitar violações de terceiros) e promover (tornar efetivo).",
+  subjectId: "dh"
+},
+{
+  id: "dhq626",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Jusnaturalismo e positivismo",
+  statement: "A respeito das correntes de fundamentação dos direitos humanos, assinale a alternativa correta.",
+  options: [
+    "O jusnaturalismo sustenta que os direitos dependem exclusivamente da vontade do legislador.",
+    "O positivismo considera juridicamente irrelevante a existência de normas formalmente reconhecidas.",
+    "O jusnaturalismo associa os direitos a uma ordem de justiça ou natureza humana anterior à vontade estatal, enquanto o positivismo destaca o reconhecimento em normas postas.",
+    "As duas correntes afirmam que os direitos só existem quando aprovados por referendo popular.",
+    "O positivismo e o jusnaturalismo são expressões idênticas para a mesma teoria."
+  ],
+  answer: 2,
+  explanations: [
+    "A dependência exclusiva da vontade legislativa aproxima-se do positivismo, não do jusnaturalismo.",
+    "O reconhecimento formal das normas é central para a perspectiva positivista.",
+    "Correta. A alternativa apresenta a distinção clássica entre fundamento jusnaturalista e fundamento positivista.",
+    "Nenhuma das correntes exige necessariamente referendo popular como condição geral de existência dos direitos.",
+    "São correntes distintas, com fundamentos filosóficos diferentes."
+  ],
+  takeaway: "Jusnaturalismo: direitos inerentes/anteriores ao Estado. Positivismo: reconhecimento em normas postas.",
+  subjectId: "dh"
+},
+{
+  id: "dhq627",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Universalismo e relativismo cultural",
+  statement: "Em relação ao universalismo e ao relativismo cultural, assinale a alternativa correta.",
+  options: [
+    "O universalismo afirma que a cultura local pode eliminar a titularidade dos direitos humanos.",
+    "O relativismo cultural chama atenção para o contexto histórico e cultural na compreensão e aplicação dos direitos.",
+    "O relativismo exige que todos os países adotem uma única concepção moral.",
+    "O universalismo restringe os direitos humanos aos cidadãos dos Estados que ratificaram tratados.",
+    "As correntes são idênticas e não apresentam qualquer tensão teórica."
+  ],
+  answer: 1,
+  explanations: [
+    "A universalidade da titularidade não pode ser eliminada simplesmente por uma tradição local.",
+    "Correta. O relativismo destaca a influência do contexto cultural e histórico, levantando debates sobre interpretação e aplicação dos direitos.",
+    "A exigência de uma única concepção moral uniforme não define o relativismo cultural.",
+    "A titularidade dos direitos humanos não se limita aos cidadãos de Estados que ratificaram determinado tratado, embora obrigações convencionais dependam dos instrumentos aplicáveis.",
+    "Há diferenças e tensões teóricas entre as correntes, ainda que existam propostas de diálogo intercultural."
+  ],
+  takeaway: "Relativismo enfatiza contexto cultural; universalismo afirma direitos inerentes a todas as pessoas.",
+  subjectId: "dh"
+},
+{
+  id: "dhq628",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Imprescritibilidade",
+  statement: "A característica da imprescritibilidade dos direitos humanos indica, em sentido doutrinário, que:",
+  options: [
+    "A pessoa perde automaticamente seus direitos humanos se não os exercer por cinco anos.",
+    "A proteção dos direitos humanos não desaparece pelo simples decurso do tempo.",
+    "Toda pretensão indenizatória decorrente de violação é necessariamente imprescritível, sem exceção.",
+    "Os direitos humanos não podem ser regulamentados por lei.",
+    "A imprescritibilidade impede qualquer limitação legítima ao exercício dos direitos."
+  ],
+  answer: 1,
+  explanations: [
+    "A titularidade não desaparece por falta de exercício durante determinado prazo.",
+    "Correta. A imprescritibilidade é apresentada pela doutrina como característica que impede a perda da proteção do direito humano pelo simples passar do tempo.",
+    "É preciso distinguir a característica do direito humano das regras de prescrição aplicáveis a pretensões concretas, que podem exigir análise jurídica própria.",
+    "Os direitos humanos podem e frequentemente precisam de regulamentação para sua efetividade.",
+    "Imprescritibilidade não significa que todo exercício seja ilimitado ou imune a restrições legítimas."
+  ],
+  takeaway: "Imprescritibilidade não deve ser confundida automaticamente com imprescritibilidade de toda pretensão indenizatória.",
+  subjectId: "dh"
+},
+{
+  id: "dhq629",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Catálogo aberto",
+  statement: "A afirmação de que o catálogo de direitos humanos é aberto significa que:",
+  options: [
+    "Somente os direitos expressamente listados em uma declaração histórica podem ser reconhecidos.",
+    "Novos direitos e novas formas de proteção podem ser reconhecidos conforme a evolução social e jurídica.",
+    "Os Estados podem escolher livremente quais pessoas terão dignidade.",
+    "Os direitos humanos deixam de existir quando não estão reunidos em um único código.",
+    "A lista de direitos humanos é definida exclusivamente por decisões administrativas."
+  ],
+  answer: 1,
+  explanations: [
+    "O catálogo aberto afasta a ideia de uma lista histórica fechada.",
+    "Correta. A evolução social e jurídica pode revelar novas necessidades de proteção e levar ao reconhecimento de novos direitos.",
+    "A dignidade e a titularidade dos direitos humanos não dependem de escolha discricionária do Estado.",
+    "Não é necessário que todos os direitos estejam reunidos em um único código para serem reconhecidos e protegidos.",
+    "O reconhecimento decorre de processos normativos e institucionais diversos, não exclusivamente de atos administrativos."
+  ],
+  takeaway: "Catálogo aberto = direitos humanos não formam uma lista fechada e imutável.",
+  subjectId: "dh"
+},
+{
+  id: "dhq630",
+  topic: "6.1 Teoria Geral dos Direitos Humanos — Dignidade da pessoa humana",
+  statement: "A dignidade da pessoa humana, como fundamento dos direitos humanos, exige que o indivíduo seja:",
+  options: [
+    "Tratado como instrumento para alcançar objetivos estatais, sempre que houver interesse público.",
+    "Reconhecido como pessoa dotada de valor próprio, não podendo ser reduzido a mero objeto ou instrumento.",
+    "Titular de direitos apenas quando cumprir deveres perante o Estado.",
+    "Protegido somente quando sua conduta for considerada moralmente adequada pela maioria.",
+    "Submetido a tratamento desigual sempre que a diferença cultural justificar."
+  ],
+  answer: 1,
+  explanations: [
+    "A dignidade impede a instrumentalização da pessoa, mesmo diante de objetivos estatais.",
+    "Correta. A pessoa possui valor intrínseco e deve ser tratada como sujeito de direitos, não como mero objeto.",
+    "A titularidade dos direitos humanos não depende de merecimento ou cumprimento prévio de deveres.",
+    "A proteção da dignidade não pode ser condicionada à aprovação moral da maioria.",
+    "Diferenças culturais não autorizam, por si sós, tratamento incompatível com a dignidade e a igualdade."
+  ],
+  takeaway: "Dignidade: cada pessoa tem valor próprio e não pode ser tratada como mero instrumento.",
+  subjectId: "dh"
+},
+{
+  id: "dhq62",
+  subjectId: "dh",
+  topic: "6.2 Processo histórico",
+  statement: "A Declaração Universal dos Direitos Humanos foi proclamada pela Assembleia Geral da ONU em:",
+  options: [
+    "1919.",
+    "1945.",
+    "1948.",
+    "1966.",
+    "1969."
+  ],
+  answer: 2,
+  explanations: [
+    "1919 é marco do constitucionalismo social de Weimar.",
+    "1945 é o ano da Carta da ONU.",
+    "Correta: a DUDH foi proclamada em 10 de dezembro de 1948.",
+    "1966 é o ano dos dois Pactos Internacionais.",
+    "1969 é o ano de adoção da Convenção Americana."
+  ],
+  takeaway: "DUDH: 10 de dezembro de 1948."
+},
+{
+  id: "dhq63",
+  subjectId: "dh",
+  topic: "6.3 Sistemas de proteção",
+  statement: "No sistema interamericano, a Comissão Interamericana de Direitos Humanos:",
+  options: [
+    "É um tribunal que profere sentenças contra indivíduos.",
+    "Recebe petições individuais e pode submeter casos à Corte IDH, observados os requisitos.",
+    "É órgão da ONU sem vínculo com a OEA.",
+    "É a mesma instituição que a Corte Interamericana.",
+    "Permite que qualquer pessoa ajuíze diretamente ação contenciosa na Corte."
+  ],
+  answer: 1,
+  explanations: [
+    "A CIDH não é tribunal penal nem julga indivíduos.",
+    "Correta: a Comissão recebe petições e pode levar casos à Corte, conforme a Convenção e o regulamento.",
+    "A CIDH integra o sistema da OEA.",
+    "Comissão e Corte têm funções distintas.",
+    "Indivíduos não submetem diretamente casos contenciosos à Corte."
+  ],
+  takeaway: "CIDH recebe petições; a Corte IDH julga casos que lhe são submetidos."
+},
+{
+  id: "dhq64",
+  subjectId: "dh",
+  topic: "6.4 Constituição e tratados",
+  statement: "Um tratado internacional de direitos humanos aprovado pelo rito do art. 5º, § 3º, da Constituição Federal terá status:",
+  options: [
+    "De lei ordinária.",
+    "De decreto regulamentar.",
+    "Equivalente ao de emenda constitucional.",
+    "Inferior a qualquer lei federal.",
+    "De norma municipal."
+  ],
+  answer: 2,
+  explanations: [
+    "Não se limita ao status de lei ordinária.",
+    "Não é mero decreto regulamentar.",
+    "Correta: dois turnos em cada Casa e três quintos dos votos geram equivalência a emenda constitucional.",
+    "Não fica abaixo de lei federal.",
+    "Não possui natureza municipal."
+  ],
+  takeaway: "Art. 5º, § 3º: rito qualificado confere equivalência a emenda constitucional."
+},
+{
+  id: "dhq65",
+  subjectId: "dh",
+  topic: "6.5 Democracia e cidadania",
+  statement: "Em um Estado Democrático de Direito, a vontade da maioria:",
+  options: [
+    "Pode afastar direitos fundamentais de grupos minoritários.",
+    "É ilimitada quando expressa em eleição direta.",
+    "Deve respeitar a Constituição, os direitos fundamentais e o pluralismo.",
+    "Substitui o controle judicial de constitucionalidade.",
+    "Autoriza discriminação se aprovada em consulta popular."
+  ],
+  answer: 2,
+  explanations: [
+    "Maioria não pode eliminar direitos fundamentais.",
+    "O poder democrático é limitado pela Constituição.",
+    "Correta: democracia constitucional combina decisão majoritária com direitos e pluralismo.",
+    "O controle de constitucionalidade permanece como garantia.",
+    "Consulta popular não legitima discriminação incompatível com direitos fundamentais."
+  ],
+  takeaway: "Democracia exige limites constitucionais e proteção das minorias."
+},
+{
+  id: "dhq66",
+  subjectId: "dh",
+  topic: "6.6 Grupos vulneráveis",
+  statement: "A Convenção sobre os Direitos das Pessoas com Deficiência foi incorporada ao direito brasileiro:",
+  options: [
+    "Como lei municipal.",
+    "Com equivalência a emenda constitucional, observado o art. 5º, § 3º.",
+    "Sem qualquer força normativa.",
+    "Como tratado comercial.",
+    "Somente por decreto estadual."
+  ],
+  answer: 1,
+  explanations: [
+    "Não é lei municipal.",
+    "Correta: foi aprovada pelo rito qualificado do art. 5º, § 3º.",
+    "Possui força normativa e status constitucional equivalente.",
+    "Não é tratado comercial.",
+    "A incorporação é federal, não por decreto estadual."
+  ],
+  takeaway: "A Convenção sobre os Direitos das Pessoas com Deficiência tem equivalência a emenda constitucional."
+},
+{
+  id: "dhq67",
+  subjectId: "dh",
+  topic: "6.7 Política Nacional de Direitos Humanos",
+  statement: "O PNDH-3 foi aprovado originalmente pelo:",
+  options: [
+    "Decreto 7.037/2009.",
+    "Decreto 678/1992.",
+    "Decreto 4.463/2002.",
+    "Lei 8.069/1990.",
+    "Decreto 9.000/2017."
+  ],
+  answer: 0,
+  explanations: [
+    "Correta: o Decreto 7.037/2009 aprovou o PNDH-3, posteriormente atualizado pelo Decreto 7.177/2010.",
+    "Decreto 678/1992 promulgou a Convenção Americana.",
+    "Decreto 4.463/2002 promulgou o reconhecimento da jurisdição da Corte IDH.",
+    "Lei 8.069/1990 é o ECA.",
+    "Não é o ato de aprovação do PNDH-3."
+  ],
+  takeaway: "PNDH-3: Decreto 7.037/2009, atualizado pelo Decreto 7.177/2010."
+},
+{
+  id: "dhq68",
+  subjectId: "dh",
+  topic: "6.8 Educação e cultura",
+  statement: "As Diretrizes Nacionais para a Educação em Direitos Humanos foram estabelecidas pela:",
+  options: [
+    "Resolução CNE/CP 1/2012.",
+    "Lei 9.474/1997.",
+    "Convenção Americana de 1969.",
+    "Lei 13.146/2015.",
+    "Declaração de 1789."
+  ],
+  answer: 0,
+  explanations: [
+    "Correta: a Resolução CNE/CP 1/2012 estabelece as Diretrizes Nacionais.",
+    "Lei 9.474/1997 trata de refugiados.",
+    "A Convenção Americana não é o ato normativo das diretrizes educacionais brasileiras.",
+    "Lei 13.146/2015 é a Lei Brasileira de Inclusão.",
+    "Declaração de 1789 é marco histórico francês."
+  ],
+  takeaway: "Resolução CNE/CP 1/2012: Diretrizes Nacionais para a Educação em Direitos Humanos."
+},
+{
+  id: "dhq69",
+  subjectId: "dh",
+  topic: "6.9 Agenda 2030",
+  statement: "A Agenda 2030 da ONU é composta por:",
+  options: [
+    "10 objetivos e 100 metas.",
+    "17 objetivos e 169 metas.",
+    "17 objetivos e 17 metas.",
+    "20 objetivos e 169 metas.",
+    "8 objetivos e 21 metas."
+  ],
+  answer: 1,
+  explanations: [
+    "Não corresponde à estrutura oficial.",
+    "Correta: são 17 ODS e 169 metas.",
+    "O número de metas é 169.",
+    "Não são 20 objetivos.",
+    "Os oito Objetivos do Milênio pertencem à agenda anterior."
+  ],
+  takeaway: "Agenda 2030: 17 ODS e 169 metas."
+},
+{
+  id: "dhq610",
+  subjectId: "dh",
+  topic: "6.10 Segurança pública",
+  statement: "Na atuação policial, o uso da força deve observar, entre outros, os princípios de:",
+  options: [
+    "Vingança e intimidação.",
+    "Legalidade, necessidade, proporcionalidade e moderação.",
+    "Discricionariedade absoluta e ausência de registro.",
+    "Punição imediata e presunção de culpa.",
+    "Preferência por força letal em qualquer resistência."
+  ],
+  answer: 1,
+  explanations: [
+    "Vingança e intimidação são incompatíveis com a função policial.",
+    "Correta: o uso da força deve ser juridicamente fundamentado e proporcional à situação.",
+    "Não existe discricionariedade absoluta; registro e controle são essenciais.",
+    "A polícia não substitui o julgamento judicial nem presume culpa.",
+    "Força letal não é resposta automática à resistência."
+  ],
+  takeaway: "Uso da força exige legalidade, necessidade, proporcionalidade, moderação e responsabilização."
+}
 ];
