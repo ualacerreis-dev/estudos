@@ -441,6 +441,31 @@ export const humanRightsLessons: Lesson[] = [
 
 export const humanRightsQuestions: Question[] = [
   {
+  {
+    id: "dhq612",
+    subjectId: "dh",
+    topic: "6.1 Teoria Geral dos Direitos Humanos — Dimensões dos direitos humanos",
+    source: {
+      bank: "Instituto AOCP",
+      year: 2026,
+      contest: "Policial Penal (DEPEN/MG)"
+    },
+    statement: "De acordo com a teoria das gerações (ou dimensões) dos direitos humanos, é correto afirmar que os direitos de solidariedade, como o direito à paz e ao meio ambiente ecologicamente equilibrado, são classificados como direitos de",
+    options: [
+      "primeira geração.",
+      "segunda geração.",
+      "terceira geração.",
+      "quarta geração."
+    ],
+    answer: 2,
+    explanations: [
+      "A primeira dimensão reúne, em regra, direitos civis e políticos, ligados às liberdades individuais e à limitação do poder estatal.",
+      "A segunda dimensão abrange direitos econômicos, sociais e culturais, associados à igualdade material e a prestações estatais.",
+      "Correta. A terceira dimensão compreende direitos de solidariedade ou fraternidade, de titularidade frequentemente coletiva ou difusa, como paz, meio ambiente equilibrado e desenvolvimento.",
+      "A quarta dimensão aparece em algumas classificações doutrinárias e pode envolver temas como democracia, informação e pluralismo, mas não é a classificação tradicional dos direitos de solidariedade citados."
+    ],
+    takeaway: "Terceira dimensão = direitos de solidariedade/fraternidade, como paz e meio ambiente ecologicamente equilibrado."
+  },
     id: "dhq611",
     subjectId: "dh",
     topic: "6.1 Teoria Geral dos Direitos Humanos — Inalienabilidade",
