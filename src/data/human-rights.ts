@@ -647,7 +647,7 @@ export const humanRightsQuestions: Question[] = [
   ],
   answer: 2,
   explanations: [
-    "A afirmação descreve corretamente o jusnaturalismo, mas não é a resposta escolhida nesta questão, que busca a formulação positivista.",
+    "A primeira parte se aproxima do jusnaturalismo, mas a frase final apresenta uma ideia de reciprocidade que não define o fundamento de validade dos direitos humanos nessa corrente; por isso, a alternativa não é a formulação mais precisa.",
     "A ideia de comando do soberano aproxima-se de uma concepção voluntarista ou positivista, não do fundamento jusnaturalista.",
     "Correta. Para o positivismo jurídico, a validade da norma está ligada à sua produção e reconhecimento conforme as regras do ordenamento jurídico.",
     "A fundamentação religiosa pode dialogar historicamente com concepções jusnaturalistas, mas não se confunde necessariamente com toda a corrente.",
